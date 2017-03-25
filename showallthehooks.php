@@ -72,9 +72,9 @@ function _showallthehooks_generate_hooks() {
  * @file
  * This file is generated automatically. It contains example implementations of 
  * all core CiviCRM hooks. You can edit it to enable additional debug on any 
- * hook. To regenerate the file, see docs.
+ * hook.
  *
- * @TODO link to docs above :)
+ * To regenerate, see README.md or https://github.com/fuzionnz/contrib.showallthehooks
  */
 
 {$source}
