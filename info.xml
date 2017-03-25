@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<extension key="contrib.civideveloper" type="module">
-  <file>civideveloper</file>
+<extension key="contrib.showallthehooks" type="module">
+  <file>showallthehooks</file>
   <name>CiviCRM Developer</name>
   <description>Exposes information about CiviCRM hooks.</description>
   <license>AGPL-3.0</license>
@@ -9,9 +9,9 @@
     <email>eileen@mcnaughty.com</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">https://github.com/fuzionnz/contrib.civideveloper</url>
-    <url desc="Documentation">https://github.com/fuzionnz/contrib.civideveloper</url>
-    <url desc="Support">https://github.com/fuzionnz/contrib.civideveloper/issues</url>
+    <url desc="Main Extension Page">https://github.com/fuzionnz/contrib.showallthehooks</url>
+    <url desc="Documentation">https://github.com/fuzionnz/contrib.showallthehooks</url>
+    <url desc="Support">https://github.com/fuzionnz/contrib.showallthehooks/issues</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2017-03-25</releaseDate>

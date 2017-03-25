@@ -15,7 +15,7 @@
  *   - https://docs.joomla.org/How_to_debug_your_code ?
  *   - https://github.com/mathiasverraes/jdump
  */
-function _civideveloper_debug($param, $name) {
+function _showallthehooks_debug($param, $name) {
   if (function_exists('dpm')) {
     dpm($param, $name);
   }
@@ -30,9 +30,9 @@ function _civideveloper_debug($param, $name) {
 /**
  * Debug a series of function arguments and the called hook.
  */
-function _civideveloper_debug_func_args($function, $args) {
+function _showallthehooks_debug_func_args($function, $args) {
   foreach ($args as $name => $arg) {
-    _civideveloper_debug($arg, $function . ': $' . $name);
+    _showallthehooks_debug($arg, $function . ': $' . $name);
   }
 }
 
@@ -43,7 +43,7 @@ function _civideveloper_debug_func_args($function, $args) {
  *
  * @return array of ReflectionClass objects.
  */
-function _civideveloper_list_hooks() {
+function _showallthehooks_list_hooks() {
   $class = new ReflectionClass('CRM_Utils_Hook');
   $hooks = $class->getMethods(ReflectionMethod::IS_STATIC);
   $ignore = ['singleton'];
@@ -59,10 +59,10 @@ function _civideveloper_list_hooks() {
 /**
  * Generate a debug function for a specific hook.
  */
-function _civideveloper_generate_hooks() {
+function _showallthehooks_generate_hooks() {
   $source = '';
-  foreach (_civideveloper_list_hooks() as $hook) {
-    $source .= _civideveloper_generate_hook($hook);
+  foreach (_showallthehooks_list_hooks() as $hook) {
+    $source .= _showallthehooks_generate_hook($hook);
   }
   return <<<EOT
 <?php
@@ -82,8 +82,8 @@ EOT;
 /**
  * Generate a debug function for a specific hook.
  */
-function _civideveloper_generate_hook(ReflectionMethod $hook) {
-  $prefix = 'civideveloper_civicrm_';
+function _showallthehooks_generate_hook(ReflectionMethod $hook) {
+  $prefix = 'showallthehooks_civicrm_';
   $docs = $hook->getDocComment();
   $parameters = $hook->getParameters();
 
@@ -102,9 +102,9 @@ function _civideveloper_generate_hook(ReflectionMethod $hook) {
 {$hook->getDocComment()}
 function {$method_name}({$params}) {
   \$args = get_defined_vars();
-  \$function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug(\$function, 'hook called');
-  // _civideveloper_debug_func_args(\$function, \$args);
+  \$function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
+  _showallthehooks_debug(\$function, 'showallthehooks: CiviCRM called hook');
+  // _showallthehooks_debug_func_args(\$function, \$args);
 }
 
 EOT;
