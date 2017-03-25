@@ -41,9 +41,72 @@ function _civideveloper_debug_func_args($function, $args) {
  * Extract a list of CiviCRM hooks.
  *
  * @TODO Include extension-provided hooks in results.
+ *
+ * @return array of ReflectionClass objects.
  */
 function _civideveloper_list_hooks() {
-  $hooks = get_class_methods("CRM_Utils_Hook");
+  $class = new ReflectionClass('CRM_Utils_Hook');
+  $hooks = $class->getMethods(ReflectionMethod::IS_STATIC);
+  $ignore = ['singleton'];
   sort($hooks);
+  $hooks = array_filter($hooks, function($m) use ($ignore) {
+    if (isset($m->name) && !in_array($m->name, $ignore)) {
+      return true;
+    }
+  });
   return $hooks;
 }
+
+/**
+ * Generate a debug function for a specific hook.
+ */
+function _civideveloper_generate_hooks() {
+  $source = '';
+  foreach (_civideveloper_list_hooks() as $hook) {
+    $source .= _civideveloper_generate_hook($hook);
+  }
+  return <<<EOT
+<?php
+/**
+ * @file
+ * This file is generated automatically. It contains example implementations of 
+ * all core CiviCRM hooks. You can edit it to enable additional debug on any 
+ * hook. To regenerate the file, see docs.
+ *
+ * @TODO link to docs above :)
+ */
+
+{$source}
+EOT;
+}
+
+/**
+ * Generate a debug function for a specific hook.
+ */
+function _civideveloper_generate_hook(ReflectionMethod $hook) {
+  $prefix = 'civideveloper_civicrm_';
+  $docs = $hook->getDocComment();
+  $parameters = $hook->getParameters();
+
+  $params = [];
+  foreach ($parameters as $parameter) {
+    $params[] =
+      $parameter->isPassedByReference() ?
+        '&$' . $parameter->getName() :
+        '$' . $parameter->getName();
+  }
+  $params = implode(', ', $params);
+  $method_name = $prefix . $hook->getName();
+
+  return <<<EOT
+  
+{$hook->getDocComment()}
+function {$method_name}({$params}) {
+  \$args = get_defined_vars();
+  \$function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args(\$function, \$args);  
+}
+
+EOT;
+}
+
