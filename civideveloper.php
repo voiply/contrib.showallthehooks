@@ -26,17 +26,6 @@ function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGrou
 }
 
 /**
- * Implements hook_civicrm_alterPaymentProcessorParams().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterPaymentProcessorParams/
- */
-function civideveloper_civicrm_aclWhereClause($paymentObj, &$rawParams, &$cookedParams) {
-  $args = get_defined_vars();
-  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);
-}
-
-/**
  * Implements hook_civicrm_alterSettingsFolders().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
@@ -406,7 +395,6 @@ function civideveloper_civicrm_uninstall() {
 }
 
 /*#
-# hook_civicrm_tokenValues
 # hook_civicrm_customFieldOptions
 # hook_civicrm_searchTasks
 */
