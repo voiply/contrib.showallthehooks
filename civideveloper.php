@@ -1,6 +1,52 @@
 <?php
 
 require_once 'civideveloper.civix.php';
+require_once 'civideveloper.debug.php';
+
+/**
+ * Implements hook_civicrm_aclWhereClause().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclWhereClause/
+ */
+function civideveloper_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$contactID, &$where) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_aclWhereClause().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclGroup/
+ */
+function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_alterPaymentProcessorParams().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterPaymentProcessorParams/
+ */
+function civideveloper_civicrm_aclWhereClause($paymentObj, &$rawParams, &$cookedParams) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_alterSettingsFolders().
+ *
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
+ */
+function civideveloper_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
+  _civideveloper_civix_civicrm_alterSettingsFolders($metaDataFolders);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
 
 /**
  * Implements hook_civicrm_angularModules().
@@ -14,15 +60,9 @@ require_once 'civideveloper.civix.php';
  */
 function civideveloper_civicrm_angularModules(&$angularModules) {
   _civideveloper_civix_civicrm_angularModules($angularModules);
-}
-
-/**
- * Implements hook_civicrm_alterSettingsFolders().
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
- */
-function civideveloper_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _civideveloper_civix_civicrm_alterSettingsFolders($metaDataFolders);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -33,12 +73,9 @@ function civideveloper_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_buildAmount
  */
 function civideveloper_civicrm_buildAmount($pageType,&$form,&$amount){
-  drupal_set_message("hook_civicrm_buildAmount called: pageType is $pageType");
-  //get_defined_vars doesn't work here because it just reports 'recursive' - left in to remin
-  //me why I'm not using it so I don't try to switch :-)
-  // dpm(get_defined_vars());
-  dpm($amount,'amount');
-  dpm($form,'form');
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -49,16 +86,27 @@ function civideveloper_civicrm_buildAmount($pageType,&$form,&$amount){
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_buildForm
  */
 function civideveloper_civicrm_buildForm($formName, &$form){
-  drupal_set_message("hook_civicrm_buildForm called: formName is $formName");
-  dpm($form);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_copy
+ */
+function civideveloper_civicrm_copy($objectName, &$object){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_custom
  */
 function civideveloper_civicrm_custom($op, $groupID, $entityID, &$params){
-  drupal_set_message("<em>_civicrm_custom</em> called: This hook is called AFTER the db write on a custom table<p>op is $op. </p><br> entityID is $entityID<br> groupID is $groupID.<br>");
-  dpm($params);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -74,6 +122,9 @@ function civideveloper_civicrm_custom($op, $groupID, $entityID, &$params){
  */
 function civideveloper_civicrm_caseTypes(&$caseTypes) {
   _civideveloper_civix_civicrm_caseTypes($caseTypes);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -83,8 +134,18 @@ function civideveloper_civicrm_caseTypes(&$caseTypes) {
  */
 function civideveloper_civicrm_config(&$config) {
   _civideveloper_civix_civicrm_config($config);
-  drupal_set_message("hook_civicrm_config called: config is $config");
-  dpm($objectRef);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_dashboard
+ */
+function civideveloper_civicrm_dashboard($contactID, &$contentPlacement){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -94,6 +155,9 @@ function civideveloper_civicrm_config(&$config) {
  */
 function civideveloper_civicrm_disable() {
   _civideveloper_civix_civicrm_disable();
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -103,6 +167,9 @@ function civideveloper_civicrm_disable() {
  */
 function civideveloper_civicrm_enable() {
   _civideveloper_civix_civicrm_enable();
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -112,6 +179,9 @@ function civideveloper_civicrm_enable() {
  */
 function civideveloper_civicrm_install() {
   _civideveloper_civix_civicrm_install();
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -120,8 +190,9 @@ function civideveloper_civicrm_install() {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_links
  */
 function civideveloper_civicrm_links($op, $objectName, $objectId, &$links) {
-  drupal_set_message("hook_civicrm_links called: op is $op, objectName is $objectName, objectID is $objectId");
-  dpm($links, "links");
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -134,6 +205,9 @@ function civideveloper_civicrm_links($op, $objectName, $objectId, &$links) {
  */
 function civideveloper_civicrm_managed(&$entities) {
   _civideveloper_civix_civicrm_managed($entities);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -142,17 +216,9 @@ function civideveloper_civicrm_managed(&$entities) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
  */
 function civideveloper_civicrm_navigationMenu(&$menu) {
-  /*
-    _civideveloper_civix_insert_navigation_menu($menu, NULL, array(
-      'label' => ts('The Page', array('domain' => 'contrib.civideveloper')),
-      'name' => 'the_page',
-      'url' => 'civicrm/the-page',
-      'permission' => 'access CiviReport,access CiviContribute',
-      'operator' => 'OR',
-      'separator' => 0,
-    ));
-    _civideveloper_civix_navigationMenu($menu);
-  */
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -164,8 +230,9 @@ function civideveloper_civicrm_navigationMenu(&$menu) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_postProcess
  */
 function civideveloper_civicrm_postProcess($formName, &$form){
-  drupal_set_message("hook_civicrm_postProcess called: formName is $formName");
-  dpm(get_defined_vars());
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -176,10 +243,9 @@ function civideveloper_civicrm_postProcess($formName, &$form){
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_pageRun
  */
 function civideveloper_civicrm_pageRun(&$page){
-  drupal_set_message("hook_civicrm_pageRun called.  This hook is called before a CiviCRM page is rendered.
-
-Note that this does not execute on every CiviCRM page in the general sense. CiviCRM's pages are classified as either 'Forms' or 'Pages', and this only runs on pages classified as 'Pages'. If you are not sure if a particular page is a Page, test it by adding some temporary debug code to /CRM/Utils/Hook.php");
-  dpm($page);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -188,9 +254,9 @@ Note that this does not execute on every CiviCRM page in the general sense. Civi
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_post
  */
 function civideveloper_civicrm_post($op, $objectName, $objectId, &$objectRef) {
-  $msg = "hook_civicrm_post called: op is $op, objectName is $objectName, objectID is $objectId";
-  drupal_set_message("hook_civicrm_post called: op is $op, objectName is $objectName, objectID is $objectId");
-  dpm($objectRef, $objectName . "civicrm_post hook");
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -199,8 +265,89 @@ function civideveloper_civicrm_post($op, $objectName, $objectId, &$objectRef) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_preProcess
  */
 function civideveloper_civicrm_preProcess($formName, &$form) {
-  drupal_set_message("hook_civicrm_preProcess called: formName is $formName");
-  dpm($form);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_searchcolumns hook. This hook is called after a search is done. This allows the developer to modify the headers and/or the values that are displayed as part of this search. The BIGGEST drawback with this hook is that you may need to modify the result template to include your fields. The result files are CRM/{Contact,Contribute,Member,Event…}/Form/Selector.tpl. However, if you use the same number of columns, you can overwrite the existing columns with the values that you want displayed. This is a HACK, but avoids template modification.
+ *
+ * @objectName - the object for this search - activity, campaign, case, contact, contribution, event, grant, membership, and pledge are supported.
+ * @headers - array (reference) - the list of column headers, an associative array with keys: ( name, sort, order )
+ * @rows - array (reference) - the list of values, an associate array with fields that are displayed for that component
+ * @selector - array (reference) - the selector object. Allows you access to the context of the search
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_searchColumns
+ */
+function civideveloper_civicrm_searchcolumns( $objectName, &$headers, &$rows, &$selector ){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_searchtasks hook. This hook is called to display the list of actions allowed after doing a contact search. This allows the module developer to inject additional actions or to remove existing actions.
+ *
+ * @objectType - the object for this search (currently only Contact, in later versions we will add membership / contribution / participants etc)
+ * @tasks the current set of tasks for that custom field. You can add/remove existing tasks. Each task needs to have a title and a class.
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_searchTasks
+ */
+function civideveloper_civicrm_searchtasks($objectType, &$tasks){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_tabs hook. This hook is called when composing the tabs to display when viewing a contact
+ *
+ * @param array $tabs array of tabs to display
+ * @param string  $contactID id of contact being displayed
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_tabs
+ */
+function civideveloper_civicrm_tabs(&$tabs, $contactID){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_summary hook. This hook is called when contact summary is rendered and you can add on top, below or replace summary with your own html content.
+ *
+ * @param array $tabs array of tabs to display
+ * @param string  $contactID id of contact being displayed
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_summary
+ */
+function civideveloper_civicrm_summary($contactID, &$content, &$contentPlacement){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_tabs hook. This hook is called when composing the tabs to display when viewing a contact
+ *
+ * @param array $tabs array of tabs to display
+ * @param string  $contactID id of contact being displayed
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_tabs
+ */
+function civideveloper_civicrm_tokens(&$tokens){
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implementation of CiviCRM _civicrm_tabs hook. This hook is called when composing the tabs to display when viewing a contact
+ *
+ * @param array $tabs array of tabs to display
+ * @param string  $contactID id of contact being displayed
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_tabs
+ */
+function civideveloper_civicrm_tokenValues(&$values, $cids, $job = null, $tokens, $context) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -216,7 +363,9 @@ function civideveloper_civicrm_preProcess($formName, &$form) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_upgrade
  */
 function civideveloper_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _civideveloper_civix_civicrm_upgrade($op, $queue);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -225,68 +374,9 @@ function civideveloper_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_validate
  */
 function civideveloper_civicrm_validate($formName, &$fields, &$files, &$form){
-  drupal_set_message("hook_civicrm_validate called: formName is $formName");
-  dpm($fields);
-  dpm($files);
-  dpm($form);
-}
-
-/**
- * Implementation of CiviCRM _civicrm_searchcolumns hook. This hook is called after a search is done. This allows the developer to modify the headers and/or the values that are displayed as part of this search. The BIGGEST drawback with this hook is that you may need to modify the result template to include your fields. The result files are CRM/{Contact,Contribute,Member,Event…}/Form/Selector.tpl. However, if you use the same number of columns, you can overwrite the existing columns with the values that you want displayed. This is a HACK, but avoids template modification.
- *
- * @objectName - the object for this search - activity, campaign, case, contact, contribution, event, grant, membership, and pledge are supported.
- * @headers - array (reference) - the list of column headers, an associative array with keys: ( name, sort, order )
- * @rows - array (reference) - the list of values, an associate array with fields that are displayed for that component
- * @selector - array (reference) - the selector object. Allows you access to the context of the search
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_searchColumns
- */
-function civideveloper_civicrm_searchcolumns( $objectName, &$headers, &$rows, &$selector ){
-  drupal_set_message("hook_civicrm_searchColumns called: objectName is $objectName. This hook is called after a search is done. This allows the developer to modify the headers and/or the values that are displayed as part of this search. The BIGGEST drawback with this hook is that you may need to modify the result template to include your fields. The result files are CRM/{Contact,Contribute,Member,Event…}/Form/Selector.tpl. However, if you use the same number of columns, you can overwrite the existing columns with the values that you want displayed. This is a HACK, but avoids template modification.");
-  dpm($objectName,'objectType');
-  dpm($headers,'headers');
-  dpm($rows, 'rows');
-  dpm($selector,'selector');
-}
-
-/**
- * Implementation of CiviCRM _civicrm_searchtasks hook. This hook is called to display the list of actions allowed after doing a contact search. This allows the module developer to inject additional actions or to remove existing actions.
- *
- * @objectType - the object for this search (currently only Contact, in later versions we will add membership / contribution / participants etc)
- * @tasks the current set of tasks for that custom field. You can add/remove existing tasks. Each task needs to have a title and a class.
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_searchTasks
- */
-function civideveloper_civicrm_searchtasks($objectType, &$tasks){
-  drupal_set_message("hook_civicrm_searchTasks called: objectType is $objectType. This hook is called to display the list of actions allowed after doing a contact search. This allows the module developer to inject additional actions or to remove existing actions.");
-  dpm($objectType,'objectType');
-  dpm($tasks,'tasks');
-}
-
-/**
- * Implementation of CiviCRM _civicrm_summary hook. This hook is called when contact summary is rendered and you can add on top, below or replace summary with your own html content.
- *
- * @param array $tabs array of tabs to display
- * @param string  $contactID id of contact being displayed
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_summary
- */
-function civideveloper_civicrm_summary($contactID, &$content, &$contentPlacement){
-  drupal_set_message("hook_civicrm_summary called");
-  dpm($content,'content');
-  dpm($contentPlacement ,'contentPlacement');
-  dpm($contactID,'contactID');
-}
-
-/**
- * Implementation of CiviCRM _civicrm_tabs hook. This hook is called when composing the tabs to display when viewing a contact
- *
- * @param array $tabs array of tabs to display
- * @param string  $contactID id of contact being displayed
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_tabs
- */
-function civideveloper_civicrm_tabs(&$tabs, $contactID){
-  drupal_set_message("hook_civicrm_tabs called");
-
-  dpm($tabs,'tabs');
-  dpm($contactID,'contactID');
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -298,6 +388,9 @@ function civideveloper_civicrm_tabs(&$tabs, $contactID){
  */
 function civideveloper_civicrm_xmlMenu(&$files) {
   _civideveloper_civix_civicrm_xmlMenu($files);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
 /**
@@ -307,20 +400,12 @@ function civideveloper_civicrm_xmlMenu(&$files) {
  */
 function civideveloper_civicrm_uninstall() {
   _civideveloper_civix_civicrm_uninstall();
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
 }
 
-
-
 /*#
-# hook_civicrm_custom
-# hook_civicrm_aclWhereClause
-# hook_civicrm_aclGroup
-# hook_civicrm_dashboard
-# hook_civicrm_xmlMenu
-# hook_civicrm_alterPaymentProcessorParams
-#
-# hook_civicrm_copy
-# hook_civicrm_tokens
 # hook_civicrm_tokenValues
 # hook_civicrm_customFieldOptions
 # hook_civicrm_searchTasks
