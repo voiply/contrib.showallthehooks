@@ -5,8 +5,9 @@
   <description>Exposes information about CiviCRM hooks.</description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>Chris Burgess</author>
-    <email>chris@fuzion.co.nz</email>
+    <author>See project pages above</author>
+    <email></email>
+    <url>https://github.com/fuzionnz/contrib.showallthehooks</url>
   </maintainer>
   <urls>
     <url desc="Main Extension Page">https://github.com/fuzionnz/contrib.showallthehooks</url>
