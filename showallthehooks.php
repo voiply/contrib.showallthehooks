@@ -59,7 +59,7 @@ function _showallthehooks_list_hooks() {
 }
 
 /**
- * Generate a debug function for a specific hook.
+ * Generate debug functions for all hooks.
  */
 function _showallthehooks_generate_hooks() {
   $source = '';
