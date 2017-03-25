@@ -4,6 +4,22 @@ require_once 'civideveloper.civix.php';
 require_once 'civideveloper.debug.php';
 
 /**
+ * Discover new hooks!
+ * cv ev '$x = get_class_methods("CRM_Utils_Hook"); sort($x); return $x;'
+ */
+
+/**
+ * Implements hook_civicrm_aclWhereClause().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclGroup/
+ */
+function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
  * Implements hook_civicrm_aclWhereClause().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclWhereClause/
@@ -17,9 +33,42 @@ function civideveloper_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$
 /**
  * Implements hook_civicrm_aclWhereClause().
  *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclGroup/
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclWhereClause/
  */
-function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
+function civideveloper_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_aclWhereClause().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclWhereClause/
+ */
+function civideveloper_civicrm_alterBadge($labelName, &$label, &$format, &$participant) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_aclWhereClause().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_aclWhereClause/
+ */
+function civideveloper_civicrm_alterBarcode(&$data, $type, $context) {
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_customFieldOptions().
+ *
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterPaymentProcessorParams/
+ */
+function civideveloper_civicrm_customFieldOptions($fieldID, &$options, $detailedFormat) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
   _civideveloper_debug_func_args($function, $args);
@@ -192,6 +241,21 @@ function civideveloper_civicrm_links($op, $objectName, $objectId, &$links) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
  */
+function civideveloper_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
+  _civideveloper_civix_civicrm_managed($entities);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
+ * Implements hook_civicrm_managed().
+ *
+ * Generate a list of entities to create/deactivate/delete when this module
+ * is installed, disabled, uninstalled.
+ *
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
+ */
 function civideveloper_civicrm_managed(&$entities) {
   _civideveloper_civix_civicrm_managed($entities);
   $args = get_defined_vars();
@@ -281,7 +345,7 @@ function civideveloper_civicrm_searchcolumns( $objectName, &$headers, &$rows, &$
  * @tasks the current set of tasks for that custom field. You can add/remove existing tasks. Each task needs to have a title and a class.
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_searchTasks
  */
-function civideveloper_civicrm_searchtasks($objectType, &$tasks){
+function civideveloper_civicrm_searchTasks($objectType, &$tasks){
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
   _civideveloper_debug_func_args($function, $args);
@@ -395,8 +459,6 @@ function civideveloper_civicrm_uninstall() {
 }
 
 /*#
-# hook_civicrm_customFieldOptions
-# hook_civicrm_searchTasks
 */
 
 /*
