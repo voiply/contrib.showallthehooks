@@ -14,4 +14,4 @@ If a new hook is added, or if you have hacked the hook implementation and want t
 
 * If Drupal dpm etc is available, use it, else use Civi debug
 * Replace all the hook implementations with a dynamic generator
-
+* Link in online docs?

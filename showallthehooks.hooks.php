@@ -30,7 +30,7 @@
 function showallthehooks_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -55,7 +55,7 @@ function showallthehooks_civicrm_aclGroup($type, $contactID, $tableName, &$allGr
 function showallthehooks_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$contactID, &$where) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -75,7 +75,7 @@ function showallthehooks_civicrm_aclWhereClause($type, &$tables, &$whereTables, 
 function showallthehooks_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -97,7 +97,7 @@ function showallthehooks_civicrm_alterAPIPermissions($entity, $action, &$params,
 function showallthehooks_civicrm_alterBadge($labelName, &$label, &$format, &$participant) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -116,7 +116,7 @@ function showallthehooks_civicrm_alterBadge($labelName, &$label, &$format, &$par
 function showallthehooks_civicrm_alterBarcode(&$data, $type, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -141,7 +141,7 @@ function showallthehooks_civicrm_alterBarcode(&$data, $type, $context) {
 function showallthehooks_civicrm_alterCalculatedMembershipStatus(&$membershipStatus, $arguments, $membership) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -162,7 +162,7 @@ function showallthehooks_civicrm_alterCalculatedMembershipStatus(&$membershipSta
 function showallthehooks_civicrm_alterContent(&$content, $context, $tplName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -183,7 +183,7 @@ function showallthehooks_civicrm_alterContent(&$content, $context, $tplName, &$o
 function showallthehooks_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $contributionDetails, $update, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -203,7 +203,7 @@ function showallthehooks_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $
 function showallthehooks_civicrm_alterDisplayName(&$displayName, $contactId, $dao) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -224,7 +224,7 @@ function showallthehooks_civicrm_alterDisplayName(&$displayName, $contactId, $da
 function showallthehooks_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $otherId, $migrationInfo) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -238,7 +238,7 @@ function showallthehooks_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $o
 function showallthehooks_civicrm_alterLogTables(&$logTableSpec) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -260,7 +260,7 @@ function showallthehooks_civicrm_alterLogTables(&$logTableSpec) {
 function showallthehooks_civicrm_alterMail(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -275,7 +275,7 @@ function showallthehooks_civicrm_alterMail(&$mailer, $driver, $params) {
 function showallthehooks_civicrm_alterMailContent(&$content) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -293,7 +293,7 @@ function showallthehooks_civicrm_alterMailContent(&$content) {
 function showallthehooks_civicrm_alterMailParams(&$params, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -313,7 +313,7 @@ function showallthehooks_civicrm_alterMailParams(&$params, $context) {
 function showallthehooks_civicrm_alterMailer(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -353,7 +353,7 @@ function showallthehooks_civicrm_alterMailer(&$mailer, $driver, $params) {
 function showallthehooks_civicrm_alterMailingLabelParams(&$args) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -368,7 +368,7 @@ function showallthehooks_civicrm_alterMailingLabelParams(&$args) {
 function showallthehooks_civicrm_alterMenu(&$items) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -397,7 +397,7 @@ function showallthehooks_civicrm_alterMenu(&$items) {
 function showallthehooks_civicrm_alterPaymentProcessorParams($paymentObj, &$rawParams, &$cookedParams) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -411,7 +411,7 @@ function showallthehooks_civicrm_alterPaymentProcessorParams($paymentObj, &$rawP
 function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -426,7 +426,7 @@ function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
 function showallthehooks_civicrm_alterSettingsFolders(&$settingsFolders) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -444,7 +444,7 @@ function showallthehooks_civicrm_alterSettingsFolders(&$settingsFolders) {
 function showallthehooks_civicrm_alterSettingsMetaData(&$settingsMetaData, $domainID, $profile) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -466,7 +466,7 @@ function showallthehooks_civicrm_alterSettingsMetaData(&$settingsMetaData, $doma
 function showallthehooks_civicrm_alterTemplateFile($formName, &$form, $context, &$tplName) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -496,7 +496,7 @@ function showallthehooks_civicrm_alterTemplateFile($formName, &$form, $context, 
 function showallthehooks_civicrm_angularModules(&$angularModules) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -513,7 +513,7 @@ function showallthehooks_civicrm_angularModules(&$angularModules) {
 function showallthehooks_civicrm_apiWrappers(&$wrappers, $apiRequest) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -528,7 +528,7 @@ function showallthehooks_civicrm_apiWrappers(&$wrappers, $apiRequest) {
 function showallthehooks_civicrm_batchItems(&$results, &$items) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -542,7 +542,7 @@ function showallthehooks_civicrm_batchItems(&$results, &$items) {
 function showallthehooks_civicrm_batchQuery(&$query) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -561,7 +561,7 @@ function showallthehooks_civicrm_batchQuery(&$query) {
 function showallthehooks_civicrm_buildAmount($pageType, &$form, &$amount) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -580,7 +580,7 @@ function showallthehooks_civicrm_buildAmount($pageType, &$form, &$amount) {
 function showallthehooks_civicrm_buildForm($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -593,7 +593,7 @@ function showallthehooks_civicrm_buildForm($formName, &$form) {
 function showallthehooks_civicrm_buildProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -609,7 +609,7 @@ function showallthehooks_civicrm_buildProfile($name) {
 function showallthehooks_civicrm_buildStateProvinceForCountry($countryID, &$states) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -626,7 +626,7 @@ function showallthehooks_civicrm_buildStateProvinceForCountry($countryID, &$stat
 function showallthehooks_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -639,7 +639,7 @@ function showallthehooks_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups)
 function showallthehooks_civicrm_caseChange($analyzer) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -656,7 +656,7 @@ function showallthehooks_civicrm_caseChange($analyzer) {
 function showallthehooks_civicrm_caseSummary($caseID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -670,7 +670,7 @@ function showallthehooks_civicrm_caseSummary($caseID) {
 function showallthehooks_civicrm_caseTypes(&$caseTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -684,7 +684,7 @@ function showallthehooks_civicrm_caseTypes(&$caseTypes) {
 function showallthehooks_civicrm_check(&$messages) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -700,7 +700,7 @@ function showallthehooks_civicrm_check(&$messages) {
 function showallthehooks_civicrm_config(&$config) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -731,7 +731,7 @@ function showallthehooks_civicrm_config(&$config) {
 function showallthehooks_civicrm_contactListQuery(&$query, $name, $context, $id) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -759,7 +759,7 @@ function showallthehooks_civicrm_contactListQuery(&$query, $name, $context, $id)
 function showallthehooks_civicrm_container($container) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -777,7 +777,7 @@ function showallthehooks_civicrm_container($container) {
 function showallthehooks_civicrm_copy($objectName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -792,7 +792,7 @@ function showallthehooks_civicrm_copy($objectName, &$object) {
 function showallthehooks_civicrm_coreResourceList(&$list, $region) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -807,7 +807,7 @@ function showallthehooks_civicrm_coreResourceList(&$list, $region) {
 function showallthehooks_civicrm_cron($jobManager) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -832,7 +832,7 @@ function showallthehooks_civicrm_cron($jobManager) {
 function showallthehooks_civicrm_crudLink($spec, $bao, &$link) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -854,7 +854,7 @@ function showallthehooks_civicrm_crudLink($spec, $bao, &$link) {
 function showallthehooks_civicrm_custom($op, $groupID, $entityID, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -881,7 +881,7 @@ function showallthehooks_civicrm_custom($op, $groupID, $entityID, &$params) {
 function showallthehooks_civicrm_customFieldOptions($customFieldID, &$options, $detailedFormat, $selectAttributes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -900,7 +900,7 @@ function showallthehooks_civicrm_customFieldOptions($customFieldID, &$options, $
 function showallthehooks_civicrm_dashboard($contactID, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -917,7 +917,7 @@ function showallthehooks_civicrm_dashboard($contactID, &$contentPlacement) {
 function showallthehooks_civicrm_dashboard_defaults($availableDashlets, &$defaultDashlets) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -929,7 +929,7 @@ function showallthehooks_civicrm_dashboard_defaults($availableDashlets, &$defaul
 function showallthehooks_civicrm_disable() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -948,7 +948,7 @@ function showallthehooks_civicrm_disable() {
 function showallthehooks_civicrm_dupeQuery($obj, $type, &$query) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -969,7 +969,7 @@ function showallthehooks_civicrm_dupeQuery($obj, $type, &$query) {
 function showallthehooks_civicrm_emailProcessor($type, &$params, $mail, &$result, $action) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -994,7 +994,7 @@ function showallthehooks_civicrm_emailProcessor($type, &$params, $mail, &$result
 function showallthehooks_civicrm_emailProcessorContact($email, $contactID, &$result) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1006,7 +1006,7 @@ function showallthehooks_civicrm_emailProcessorContact($email, $contactID, &$res
 function showallthehooks_civicrm_enable() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1020,7 +1020,7 @@ function showallthehooks_civicrm_enable() {
 function showallthehooks_civicrm_entityRefFilters(&$filters) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1041,7 +1041,7 @@ function showallthehooks_civicrm_entityRefFilters(&$filters) {
 function showallthehooks_civicrm_entityTypes(&$entityTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1054,7 +1054,7 @@ function showallthehooks_civicrm_entityTypes(&$entityTypes) {
 function showallthehooks_civicrm_eventDiscount(&$form, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1075,7 +1075,7 @@ function showallthehooks_civicrm_eventDiscount(&$form, &$params) {
 function showallthehooks_civicrm_export(&$exportTempTable, &$headerRows, &$sqlColumns, &$exportMode) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1092,7 +1092,7 @@ function showallthehooks_civicrm_export(&$exportTempTable, &$headerRows, &$sqlCo
 function showallthehooks_civicrm_fieldOptions($entity, $field, &$options, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1103,7 +1103,7 @@ function showallthehooks_civicrm_fieldOptions($entity, $field, &$options, $param
 function showallthehooks_civicrm_fileSearches(&$fileSearches) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1119,7 +1119,7 @@ function showallthehooks_civicrm_fileSearches(&$fileSearches) {
 function showallthehooks_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1133,7 +1133,7 @@ function showallthehooks_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
 function showallthehooks_civicrm_idsException(&$skip) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1161,7 +1161,7 @@ function showallthehooks_civicrm_idsException(&$skip) {
 function showallthehooks_civicrm_import($object, $usage, &$objectRef, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1173,7 +1173,7 @@ function showallthehooks_civicrm_import($object, $usage, &$objectRef, &$params) 
 function showallthehooks_civicrm_install() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1200,7 +1200,7 @@ function showallthehooks_civicrm_install() {
 function showallthehooks_civicrm_links($op, $objectName, &$objectId, &$links, &$mask, &$values) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1219,7 +1219,7 @@ function showallthehooks_civicrm_links($op, $objectName, &$objectId, &$links, &$
 function showallthehooks_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1236,7 +1236,7 @@ function showallthehooks_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
 function showallthehooks_civicrm_mailingTemplateTypes(&$types) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1263,7 +1263,7 @@ function showallthehooks_civicrm_mailingTemplateTypes(&$types) {
 function showallthehooks_civicrm_managed(&$entities) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1284,7 +1284,7 @@ function showallthehooks_civicrm_managed(&$entities) {
 function showallthehooks_civicrm_membershipTypeValues(&$form, &$membershipTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1307,7 +1307,7 @@ function showallthehooks_civicrm_membershipTypeValues(&$form, &$membershipTypes)
 function showallthehooks_civicrm_merge($type, &$data, $mainId, $otherId, $tables) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1322,7 +1322,7 @@ function showallthehooks_civicrm_merge($type, &$data, $mainId, $otherId, $tables
 function showallthehooks_civicrm_navigationMenu(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1337,7 +1337,7 @@ function showallthehooks_civicrm_navigationMenu(&$params) {
 function showallthehooks_civicrm_notePrivacy(&$noteValues) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1356,7 +1356,7 @@ function showallthehooks_civicrm_notePrivacy(&$noteValues) {
 function showallthehooks_civicrm_optionValues(&$options, $name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1372,7 +1372,7 @@ function showallthehooks_civicrm_optionValues(&$options, $name) {
 function showallthehooks_civicrm_pageRun(&$page) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1390,7 +1390,7 @@ function showallthehooks_civicrm_pageRun(&$page) {
 function showallthehooks_civicrm_permission(&$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1409,7 +1409,7 @@ function showallthehooks_civicrm_permission(&$permissions) {
 function showallthehooks_civicrm_permission_check($permission, &$granted) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1432,7 +1432,7 @@ function showallthehooks_civicrm_permission_check($permission, &$granted) {
 function showallthehooks_civicrm_post($op, $objectName, $objectId, &$objectRef) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1449,7 +1449,7 @@ function showallthehooks_civicrm_post($op, $objectName, $objectId, &$objectRef) 
 function showallthehooks_civicrm_postEmailSend(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1464,7 +1464,7 @@ function showallthehooks_civicrm_postEmailSend(&$params) {
 function showallthehooks_civicrm_postMailing($mailingId) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1483,7 +1483,7 @@ function showallthehooks_civicrm_postMailing($mailingId) {
 function showallthehooks_civicrm_postProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1495,7 +1495,7 @@ function showallthehooks_civicrm_postProcess($formName, &$form) {
 function showallthehooks_civicrm_postSave(&$dao) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1513,7 +1513,7 @@ function showallthehooks_civicrm_postSave(&$dao) {
 function showallthehooks_civicrm_post_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1536,7 +1536,7 @@ function showallthehooks_civicrm_post_case_merge($mainContactId, $mainCaseId, $o
 function showallthehooks_civicrm_pre($op, $objectName, $id, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1554,7 +1554,7 @@ function showallthehooks_civicrm_pre($op, $objectName, $id, &$params) {
 function showallthehooks_civicrm_preProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1572,7 +1572,7 @@ function showallthehooks_civicrm_preProcess($formName, &$form) {
 function showallthehooks_civicrm_pre_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1585,7 +1585,7 @@ function showallthehooks_civicrm_pre_case_merge($mainContactId, $mainCaseId, $ot
 function showallthehooks_civicrm_processProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1601,7 +1601,7 @@ function showallthehooks_civicrm_processProfile($name) {
 function showallthehooks_civicrm_queryObjects(&$queryObjects, $type) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1616,7 +1616,7 @@ function showallthehooks_civicrm_queryObjects(&$queryObjects, $type) {
 function showallthehooks_civicrm_recent(&$recentArray) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1637,7 +1637,7 @@ function showallthehooks_civicrm_recent(&$recentArray) {
 function showallthehooks_civicrm_referenceCounts($dao, &$refCounts) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1665,7 +1665,7 @@ function showallthehooks_civicrm_referenceCounts($dao, &$refCounts) {
 function showallthehooks_civicrm_searchColumns($objectName, &$headers, &$rows, &$selector) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1678,7 +1678,7 @@ function showallthehooks_civicrm_searchColumns($objectName, &$headers, &$rows, &
 function showallthehooks_civicrm_searchProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1704,7 +1704,7 @@ function showallthehooks_civicrm_searchProfile($name) {
 function showallthehooks_civicrm_searchTasks($objectType, &$tasks) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1716,7 +1716,7 @@ function showallthehooks_civicrm_searchTasks($objectType, &$tasks) {
 function showallthehooks_civicrm_selectWhereClause($entity, &$clauses) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1736,7 +1736,7 @@ function showallthehooks_civicrm_selectWhereClause($entity, &$clauses) {
 function showallthehooks_civicrm_summary($contactID, &$content, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1753,7 +1753,7 @@ function showallthehooks_civicrm_summary($contactID, &$content, &$contentPlaceme
 function showallthehooks_civicrm_summaryActions(&$actions, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1771,7 +1771,7 @@ function showallthehooks_civicrm_summaryActions(&$actions, $contactID) {
 function showallthehooks_civicrm_tabs(&$tabs, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1791,7 +1791,7 @@ function showallthehooks_civicrm_tabs(&$tabs, $contactID) {
 function showallthehooks_civicrm_tabset($tabsetName, &$tabs, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1815,7 +1815,7 @@ function showallthehooks_civicrm_tabset($tabsetName, &$tabs, $context) {
 function showallthehooks_civicrm_tokenValues(&$details, $contactIDs, $jobID, $tokens, $className) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1830,7 +1830,7 @@ function showallthehooks_civicrm_tokenValues(&$details, $contactIDs, $jobID, $to
 function showallthehooks_civicrm_tokens(&$tokens) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1855,7 +1855,7 @@ function showallthehooks_civicrm_tokens(&$tokens) {
 function showallthehooks_civicrm_triggerInfo(&$info, $tableName) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1867,7 +1867,7 @@ function showallthehooks_civicrm_triggerInfo(&$info, $tableName) {
 function showallthehooks_civicrm_unhandledException($exception, $request) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1879,7 +1879,7 @@ function showallthehooks_civicrm_unhandledException($exception, $request) {
 function showallthehooks_civicrm_uninstall() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1904,7 +1904,7 @@ function showallthehooks_civicrm_uninstall() {
 function showallthehooks_civicrm_unsubscribeGroups($op, $mailingId, $contactId, &$groups, &$baseGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1924,7 +1924,7 @@ function showallthehooks_civicrm_unsubscribeGroups($op, $mailingId, $contactId, 
 function showallthehooks_civicrm_upgrade($op, $queue) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1946,7 +1946,7 @@ function showallthehooks_civicrm_upgrade($op, $queue) {
 function showallthehooks_civicrm_validateForm($formName, &$fields, &$files, &$form, &$errors) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1959,7 +1959,7 @@ function showallthehooks_civicrm_validateForm($formName, &$fields, &$files, &$fo
 function showallthehooks_civicrm_validateProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1972,7 +1972,7 @@ function showallthehooks_civicrm_validateProfile($name) {
 function showallthehooks_civicrm_viewProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
   
@@ -1988,7 +1988,7 @@ function showallthehooks_civicrm_viewProfile($name) {
 function showallthehooks_civicrm_xmlMenu(&$files) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'hook called');
+  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
   // _showallthehooks_debug_func_args($function, $args);
 }
 
