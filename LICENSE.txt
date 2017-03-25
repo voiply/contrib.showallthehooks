@@ -1,5 +1,6 @@
 Package: contrib.showallthehooks
-Copyright (C) 2017, Chris Burgess <chris@giantrobot.co.nz>
+Copyright (C) 2017, Fuzion / Chris Burgess <chris@fuzion.co.nz>
+
 Licensed under the GNU Affero Public License 3.0 (below).
 
 -------------------------------------------------------------------------------
