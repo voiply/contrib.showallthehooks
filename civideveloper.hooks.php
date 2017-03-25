@@ -30,7 +30,8 @@
 function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -54,7 +55,8 @@ function civideveloper_civicrm_aclGroup($type, $contactID, $tableName, &$allGrou
 function civideveloper_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$contactID, &$where) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -73,7 +75,8 @@ function civideveloper_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$
 function civideveloper_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -94,7 +97,8 @@ function civideveloper_civicrm_alterAPIPermissions($entity, $action, &$params, &
 function civideveloper_civicrm_alterBadge($labelName, &$label, &$format, &$participant) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -112,7 +116,8 @@ function civideveloper_civicrm_alterBadge($labelName, &$label, &$format, &$parti
 function civideveloper_civicrm_alterBarcode(&$data, $type, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -136,7 +141,8 @@ function civideveloper_civicrm_alterBarcode(&$data, $type, $context) {
 function civideveloper_civicrm_alterCalculatedMembershipStatus(&$membershipStatus, $arguments, $membership) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -156,7 +162,8 @@ function civideveloper_civicrm_alterCalculatedMembershipStatus(&$membershipStatu
 function civideveloper_civicrm_alterContent(&$content, $context, $tplName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -176,7 +183,8 @@ function civideveloper_civicrm_alterContent(&$content, $context, $tplName, &$obj
 function civideveloper_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $contributionDetails, $update, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -195,7 +203,8 @@ function civideveloper_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $co
 function civideveloper_civicrm_alterDisplayName(&$displayName, $contactId, $dao) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -215,7 +224,8 @@ function civideveloper_civicrm_alterDisplayName(&$displayName, $contactId, $dao)
 function civideveloper_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $otherId, $migrationInfo) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -228,7 +238,8 @@ function civideveloper_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $oth
 function civideveloper_civicrm_alterLogTables(&$logTableSpec) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -249,7 +260,8 @@ function civideveloper_civicrm_alterLogTables(&$logTableSpec) {
 function civideveloper_civicrm_alterMail(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -263,7 +275,8 @@ function civideveloper_civicrm_alterMail(&$mailer, $driver, $params) {
 function civideveloper_civicrm_alterMailContent(&$content) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -280,7 +293,8 @@ function civideveloper_civicrm_alterMailContent(&$content) {
 function civideveloper_civicrm_alterMailParams(&$params, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -299,7 +313,8 @@ function civideveloper_civicrm_alterMailParams(&$params, $context) {
 function civideveloper_civicrm_alterMailer(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -338,7 +353,8 @@ function civideveloper_civicrm_alterMailer(&$mailer, $driver, $params) {
 function civideveloper_civicrm_alterMailingLabelParams(&$args) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -352,7 +368,8 @@ function civideveloper_civicrm_alterMailingLabelParams(&$args) {
 function civideveloper_civicrm_alterMenu(&$items) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -380,7 +397,8 @@ function civideveloper_civicrm_alterMenu(&$items) {
 function civideveloper_civicrm_alterPaymentProcessorParams($paymentObj, &$rawParams, &$cookedParams) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -393,7 +411,8 @@ function civideveloper_civicrm_alterPaymentProcessorParams($paymentObj, &$rawPar
 function civideveloper_civicrm_alterReportVar($varType, &$var, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -407,7 +426,8 @@ function civideveloper_civicrm_alterReportVar($varType, &$var, &$object) {
 function civideveloper_civicrm_alterSettingsFolders(&$settingsFolders) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -424,7 +444,8 @@ function civideveloper_civicrm_alterSettingsFolders(&$settingsFolders) {
 function civideveloper_civicrm_alterSettingsMetaData(&$settingsMetaData, $domainID, $profile) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -445,7 +466,8 @@ function civideveloper_civicrm_alterSettingsMetaData(&$settingsMetaData, $domain
 function civideveloper_civicrm_alterTemplateFile($formName, &$form, $context, &$tplName) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -474,7 +496,8 @@ function civideveloper_civicrm_alterTemplateFile($formName, &$form, $context, &$
 function civideveloper_civicrm_angularModules(&$angularModules) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -490,7 +513,8 @@ function civideveloper_civicrm_angularModules(&$angularModules) {
 function civideveloper_civicrm_apiWrappers(&$wrappers, $apiRequest) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -504,7 +528,8 @@ function civideveloper_civicrm_apiWrappers(&$wrappers, $apiRequest) {
 function civideveloper_civicrm_batchItems(&$results, &$items) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -517,7 +542,8 @@ function civideveloper_civicrm_batchItems(&$results, &$items) {
 function civideveloper_civicrm_batchQuery(&$query) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -535,7 +561,8 @@ function civideveloper_civicrm_batchQuery(&$query) {
 function civideveloper_civicrm_buildAmount($pageType, &$form, &$amount) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -553,7 +580,8 @@ function civideveloper_civicrm_buildAmount($pageType, &$form, &$amount) {
 function civideveloper_civicrm_buildForm($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -565,7 +593,8 @@ function civideveloper_civicrm_buildForm($formName, &$form) {
 function civideveloper_civicrm_buildProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -580,7 +609,8 @@ function civideveloper_civicrm_buildProfile($name) {
 function civideveloper_civicrm_buildStateProvinceForCountry($countryID, &$states) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -596,7 +626,8 @@ function civideveloper_civicrm_buildStateProvinceForCountry($countryID, &$states
 function civideveloper_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -608,7 +639,8 @@ function civideveloper_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups) {
 function civideveloper_civicrm_caseChange($analyzer) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -624,7 +656,8 @@ function civideveloper_civicrm_caseChange($analyzer) {
 function civideveloper_civicrm_caseSummary($caseID) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -637,7 +670,8 @@ function civideveloper_civicrm_caseSummary($caseID) {
 function civideveloper_civicrm_caseTypes(&$caseTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -650,7 +684,8 @@ function civideveloper_civicrm_caseTypes(&$caseTypes) {
 function civideveloper_civicrm_check(&$messages) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -665,7 +700,8 @@ function civideveloper_civicrm_check(&$messages) {
 function civideveloper_civicrm_config(&$config) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -695,7 +731,8 @@ function civideveloper_civicrm_config(&$config) {
 function civideveloper_civicrm_contactListQuery(&$query, $name, $context, $id) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -722,7 +759,8 @@ function civideveloper_civicrm_contactListQuery(&$query, $name, $context, $id) {
 function civideveloper_civicrm_container($container) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -739,7 +777,8 @@ function civideveloper_civicrm_container($container) {
 function civideveloper_civicrm_copy($objectName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -753,7 +792,8 @@ function civideveloper_civicrm_copy($objectName, &$object) {
 function civideveloper_civicrm_coreResourceList(&$list, $region) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -767,7 +807,8 @@ function civideveloper_civicrm_coreResourceList(&$list, $region) {
 function civideveloper_civicrm_cron($jobManager) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -791,7 +832,8 @@ function civideveloper_civicrm_cron($jobManager) {
 function civideveloper_civicrm_crudLink($spec, $bao, &$link) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -812,7 +854,8 @@ function civideveloper_civicrm_crudLink($spec, $bao, &$link) {
 function civideveloper_civicrm_custom($op, $groupID, $entityID, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -838,7 +881,8 @@ function civideveloper_civicrm_custom($op, $groupID, $entityID, &$params) {
 function civideveloper_civicrm_customFieldOptions($customFieldID, &$options, $detailedFormat, $selectAttributes) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -856,7 +900,8 @@ function civideveloper_civicrm_customFieldOptions($customFieldID, &$options, $de
 function civideveloper_civicrm_dashboard($contactID, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -872,7 +917,8 @@ function civideveloper_civicrm_dashboard($contactID, &$contentPlacement) {
 function civideveloper_civicrm_dashboard_defaults($availableDashlets, &$defaultDashlets) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -883,7 +929,8 @@ function civideveloper_civicrm_dashboard_defaults($availableDashlets, &$defaultD
 function civideveloper_civicrm_disable() {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -901,7 +948,8 @@ function civideveloper_civicrm_disable() {
 function civideveloper_civicrm_dupeQuery($obj, $type, &$query) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -921,7 +969,8 @@ function civideveloper_civicrm_dupeQuery($obj, $type, &$query) {
 function civideveloper_civicrm_emailProcessor($type, &$params, $mail, &$result, $action) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -945,7 +994,8 @@ function civideveloper_civicrm_emailProcessor($type, &$params, $mail, &$result, 
 function civideveloper_civicrm_emailProcessorContact($email, $contactID, &$result) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -956,7 +1006,8 @@ function civideveloper_civicrm_emailProcessorContact($email, $contactID, &$resul
 function civideveloper_civicrm_enable() {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -969,7 +1020,8 @@ function civideveloper_civicrm_enable() {
 function civideveloper_civicrm_entityRefFilters(&$filters) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -989,7 +1041,8 @@ function civideveloper_civicrm_entityRefFilters(&$filters) {
 function civideveloper_civicrm_entityTypes(&$entityTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1001,7 +1054,8 @@ function civideveloper_civicrm_entityTypes(&$entityTypes) {
 function civideveloper_civicrm_eventDiscount(&$form, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1021,7 +1075,8 @@ function civideveloper_civicrm_eventDiscount(&$form, &$params) {
 function civideveloper_civicrm_export(&$exportTempTable, &$headerRows, &$sqlColumns, &$exportMode) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1037,7 +1092,8 @@ function civideveloper_civicrm_export(&$exportTempTable, &$headerRows, &$sqlColu
 function civideveloper_civicrm_fieldOptions($entity, $field, &$options, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1047,7 +1103,8 @@ function civideveloper_civicrm_fieldOptions($entity, $field, &$options, $params)
 function civideveloper_civicrm_fileSearches(&$fileSearches) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1062,7 +1119,8 @@ function civideveloper_civicrm_fileSearches(&$fileSearches) {
 function civideveloper_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1075,7 +1133,8 @@ function civideveloper_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
 function civideveloper_civicrm_idsException(&$skip) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1102,7 +1161,8 @@ function civideveloper_civicrm_idsException(&$skip) {
 function civideveloper_civicrm_import($object, $usage, &$objectRef, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1113,7 +1173,8 @@ function civideveloper_civicrm_import($object, $usage, &$objectRef, &$params) {
 function civideveloper_civicrm_install() {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1139,7 +1200,8 @@ function civideveloper_civicrm_install() {
 function civideveloper_civicrm_links($op, $objectName, &$objectId, &$links, &$mask, &$values) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1157,7 +1219,8 @@ function civideveloper_civicrm_links($op, $objectName, &$objectId, &$links, &$ma
 function civideveloper_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1173,7 +1236,8 @@ function civideveloper_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
 function civideveloper_civicrm_mailingTemplateTypes(&$types) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1199,7 +1263,8 @@ function civideveloper_civicrm_mailingTemplateTypes(&$types) {
 function civideveloper_civicrm_managed(&$entities) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1219,7 +1284,8 @@ function civideveloper_civicrm_managed(&$entities) {
 function civideveloper_civicrm_membershipTypeValues(&$form, &$membershipTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1241,7 +1307,8 @@ function civideveloper_civicrm_membershipTypeValues(&$form, &$membershipTypes) {
 function civideveloper_civicrm_merge($type, &$data, $mainId, $otherId, $tables) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1255,7 +1322,8 @@ function civideveloper_civicrm_merge($type, &$data, $mainId, $otherId, $tables) 
 function civideveloper_civicrm_navigationMenu(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1269,7 +1337,8 @@ function civideveloper_civicrm_navigationMenu(&$params) {
 function civideveloper_civicrm_notePrivacy(&$noteValues) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1287,7 +1356,8 @@ function civideveloper_civicrm_notePrivacy(&$noteValues) {
 function civideveloper_civicrm_optionValues(&$options, $name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1302,7 +1372,8 @@ function civideveloper_civicrm_optionValues(&$options, $name) {
 function civideveloper_civicrm_pageRun(&$page) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1319,7 +1390,8 @@ function civideveloper_civicrm_pageRun(&$page) {
 function civideveloper_civicrm_permission(&$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1337,7 +1409,8 @@ function civideveloper_civicrm_permission(&$permissions) {
 function civideveloper_civicrm_permission_check($permission, &$granted) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1359,7 +1432,8 @@ function civideveloper_civicrm_permission_check($permission, &$granted) {
 function civideveloper_civicrm_post($op, $objectName, $objectId, &$objectRef) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1375,7 +1449,8 @@ function civideveloper_civicrm_post($op, $objectName, $objectId, &$objectRef) {
 function civideveloper_civicrm_postEmailSend(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1389,7 +1464,8 @@ function civideveloper_civicrm_postEmailSend(&$params) {
 function civideveloper_civicrm_postMailing($mailingId) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1407,7 +1483,8 @@ function civideveloper_civicrm_postMailing($mailingId) {
 function civideveloper_civicrm_postProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1418,7 +1495,8 @@ function civideveloper_civicrm_postProcess($formName, &$form) {
 function civideveloper_civicrm_postSave(&$dao) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1435,7 +1513,8 @@ function civideveloper_civicrm_postSave(&$dao) {
 function civideveloper_civicrm_post_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1457,7 +1536,8 @@ function civideveloper_civicrm_post_case_merge($mainContactId, $mainCaseId, $oth
 function civideveloper_civicrm_pre($op, $objectName, $id, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1474,7 +1554,8 @@ function civideveloper_civicrm_pre($op, $objectName, $id, &$params) {
 function civideveloper_civicrm_preProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1491,7 +1572,8 @@ function civideveloper_civicrm_preProcess($formName, &$form) {
 function civideveloper_civicrm_pre_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1503,7 +1585,8 @@ function civideveloper_civicrm_pre_case_merge($mainContactId, $mainCaseId, $othe
 function civideveloper_civicrm_processProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1518,7 +1601,8 @@ function civideveloper_civicrm_processProfile($name) {
 function civideveloper_civicrm_queryObjects(&$queryObjects, $type) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1532,7 +1616,8 @@ function civideveloper_civicrm_queryObjects(&$queryObjects, $type) {
 function civideveloper_civicrm_recent(&$recentArray) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1552,7 +1637,8 @@ function civideveloper_civicrm_recent(&$recentArray) {
 function civideveloper_civicrm_referenceCounts($dao, &$refCounts) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1579,7 +1665,8 @@ function civideveloper_civicrm_referenceCounts($dao, &$refCounts) {
 function civideveloper_civicrm_searchColumns($objectName, &$headers, &$rows, &$selector) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1591,7 +1678,8 @@ function civideveloper_civicrm_searchColumns($objectName, &$headers, &$rows, &$s
 function civideveloper_civicrm_searchProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1616,7 +1704,8 @@ function civideveloper_civicrm_searchProfile($name) {
 function civideveloper_civicrm_searchTasks($objectType, &$tasks) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1627,7 +1716,8 @@ function civideveloper_civicrm_searchTasks($objectType, &$tasks) {
 function civideveloper_civicrm_selectWhereClause($entity, &$clauses) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1646,7 +1736,8 @@ function civideveloper_civicrm_selectWhereClause($entity, &$clauses) {
 function civideveloper_civicrm_summary($contactID, &$content, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1662,7 +1753,8 @@ function civideveloper_civicrm_summary($contactID, &$content, &$contentPlacement
 function civideveloper_civicrm_summaryActions(&$actions, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1679,7 +1771,8 @@ function civideveloper_civicrm_summaryActions(&$actions, $contactID) {
 function civideveloper_civicrm_tabs(&$tabs, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1698,7 +1791,8 @@ function civideveloper_civicrm_tabs(&$tabs, $contactID) {
 function civideveloper_civicrm_tabset($tabsetName, &$tabs, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1721,7 +1815,8 @@ function civideveloper_civicrm_tabset($tabsetName, &$tabs, $context) {
 function civideveloper_civicrm_tokenValues(&$details, $contactIDs, $jobID, $tokens, $className) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1735,7 +1830,8 @@ function civideveloper_civicrm_tokenValues(&$details, $contactIDs, $jobID, $toke
 function civideveloper_civicrm_tokens(&$tokens) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1759,7 +1855,8 @@ function civideveloper_civicrm_tokens(&$tokens) {
 function civideveloper_civicrm_triggerInfo(&$info, $tableName) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1770,7 +1867,8 @@ function civideveloper_civicrm_triggerInfo(&$info, $tableName) {
 function civideveloper_civicrm_unhandledException($exception, $request) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1781,7 +1879,8 @@ function civideveloper_civicrm_unhandledException($exception, $request) {
 function civideveloper_civicrm_uninstall() {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1805,7 +1904,8 @@ function civideveloper_civicrm_uninstall() {
 function civideveloper_civicrm_unsubscribeGroups($op, $mailingId, $contactId, &$groups, &$baseGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1824,7 +1924,8 @@ function civideveloper_civicrm_unsubscribeGroups($op, $mailingId, $contactId, &$
 function civideveloper_civicrm_upgrade($op, $queue) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1845,7 +1946,8 @@ function civideveloper_civicrm_upgrade($op, $queue) {
 function civideveloper_civicrm_validateForm($formName, &$fields, &$files, &$form, &$errors) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1857,7 +1959,8 @@ function civideveloper_civicrm_validateForm($formName, &$fields, &$files, &$form
 function civideveloper_civicrm_validateProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1869,7 +1972,8 @@ function civideveloper_civicrm_validateProfile($name) {
 function civideveloper_civicrm_viewProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
   
 /**
@@ -1884,6 +1988,7 @@ function civideveloper_civicrm_viewProfile($name) {
 function civideveloper_civicrm_xmlMenu(&$files) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);  
+  _civideveloper_debug($function, 'hook called');
+  // _civideveloper_debug_func_args($function, $args);
 }
 

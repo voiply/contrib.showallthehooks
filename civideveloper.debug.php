@@ -31,7 +31,6 @@ function _civideveloper_debug($param, $name) {
  * Debug a series of function arguments and the called hook.
  */
 function _civideveloper_debug_func_args($function, $args) {
-  return;
   foreach ($args as $name => $arg) {
     _civideveloper_debug($arg, $function . ': $' . $name);
   }
@@ -104,7 +103,8 @@ function _civideveloper_generate_hook(ReflectionMethod $hook) {
 function {$method_name}({$params}) {
   \$args = get_defined_vars();
   \$function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args(\$function, \$args);  
+  _civideveloper_debug(\$function, 'hook called');
+  // _civideveloper_debug_func_args(\$function, \$args);
 }
 
 EOT;
