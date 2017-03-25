@@ -458,19 +458,116 @@ function civideveloper_civicrm_uninstall() {
   _civideveloper_debug_func_args($function, $args);
 }
 
-/*#
-*/
-
 /*
-# hook_civicrm_mailingGroups
-
-# hook_civicrm_contactListQuery
-# hook_civicrm_membershipTypeValues
-# hook_civicrm_alterMailParams
-# hook_civicrm_caseSummary
-# hook_civicrm_config
-# hook_civicrm_navigationMenu
-# hook_civicrm_merge
-# hook_civicrm_export
-# hook_civicrm_emailProcessor
+aclGroup
+aclWhereClause
+alterAPIPermissions
+alterBadge
+alterBarcode
+alterCalculatedMembershipStatus
+alterContent
+alterDeferredRevenueItems
+alterDisplayName
+alterLocationMergeData
+alterLogTables
+alterMail
+alterMailContent
+alterMailParams
+alterMailer
+alterMailingLabelParams
+alterMenu
+alterPaymentProcessorParams
+alterReportVar
+alterSettingsFolders
+alterSettingsMetaData
+alterTemplateFile
+angularModules
+apiWrappers
+batchItems
+batchQuery
+buildAmount
+buildForm
+buildProfile
+buildStateProvinceForCountry
+buildUFGroupsForModule
+caseChange
+caseSummary
+caseTypes
+check
+commonBuildModuleList
+commonInvoke
+config
+contactListQuery
+container
+copy
+coreResourceList
+cron
+crudLink
+custom
+customFieldOptions
+dashboard
+dashboard_defaults
+disable
+dupeQuery
+emailProcessor
+emailProcessorContact
+enable
+entityRefFilters
+entityTypes
+eventDiscount
+export
+fieldOptions
+fileSearches
+geocoderFormat
+idsException
+import
+install
+invoke
+links
+mailingGroups
+mailingTemplateTypes
+managed
+membershipTypeValues
+merge
+navigationMenu
+notePrivacy
+optionValues
+pageRun
+permission
+permission_check
+post
+postEmailSend
+postMailing
+postProcess
+postSave
+post_case_merge
+pre
+preProcess
+pre_case_merge
+processProfile
+queryObjects
+recent
+referenceCounts
+requireCiviModules
+runHooks
+searchColumns
+searchProfile
+searchTasks
+selectWhereClause
+singleton
+summary
+summaryActions
+tabs
+tabset
+tokenValues
+tokens
+triggerInfo
+unhandledException
+uninstall
+unsubscribeGroups
+upgrade
+validateForm
+validateProfile
+viewProfile
+xmlMenu
 */
