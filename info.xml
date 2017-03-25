@@ -21,7 +21,7 @@
     <ver>4.6</ver>
     <ver>4.7</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>This is a development module, do not enable in production.</comments>
   <civix>
     <namespace>CRM/Civideveloper</namespace>
   </civix>

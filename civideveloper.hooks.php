@@ -62,17 +62,6 @@ function civideveloper_civicrm_alterBarcode(&$data, $type, $context) {
 }
 
 /**
- * Implements hook_civicrm_customFieldOptions().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterPaymentProcessorParams/
- */
-function civideveloper_civicrm_customFieldOptions($fieldID, &$options, $detailedFormat) {
-  $args = get_defined_vars();
-  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
-  _civideveloper_debug_func_args($function, $args);
-}
-
-/**
  * Implements hook_civicrm_alterSettingsFolders().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
@@ -128,6 +117,24 @@ function civideveloper_civicrm_buildForm($formName, &$form){
 }
 
 /**
+ * Implements hook_civicrm_caseTypes().
+ *
+ * Generate a list of case-types.
+ *
+ * @param array $caseTypes
+ *
+ * Note: This hook only runs in CiviCRM 4.4+.
+ *
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
+ */
+function civideveloper_civicrm_caseTypes(&$caseTypes) {
+  _civideveloper_civix_civicrm_caseTypes($caseTypes);
+  $args = get_defined_vars();
+  $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
+  _civideveloper_debug_func_args($function, $args);
+}
+
+/**
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_copy
  */
 function civideveloper_civicrm_copy($objectName, &$object){
@@ -146,18 +153,11 @@ function civideveloper_civicrm_custom($op, $groupID, $entityID, &$params){
 }
 
 /**
- * Implements hook_civicrm_caseTypes().
+ * Implements hook_civicrm_customFieldOptions().
  *
- * Generate a list of case-types.
- *
- * @param array $caseTypes
- *
- * Note: This hook only runs in CiviCRM 4.4+.
- *
- * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
+ * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterPaymentProcessorParams/
  */
-function civideveloper_civicrm_caseTypes(&$caseTypes) {
-  _civideveloper_civix_civicrm_caseTypes($caseTypes);
+function civideveloper_civicrm_customFieldOptions($fieldID, &$options, $detailedFormat) {
   $args = get_defined_vars();
   $function = preg_replace('/civideveloper/', 'hook', __FUNCTION__);
   _civideveloper_debug_func_args($function, $args);
