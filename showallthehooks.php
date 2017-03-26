@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @file
+ *
+ * Show all hooks in CiviCRM. This file contains debug code and generator code.
+ */
+
 require_once 'showallthehooks.hooks.php';
 
 /**
@@ -126,7 +132,6 @@ function _showallthehooks_wp_show_notices($args) {
       $messages[] = "{$message['name']}: {$message['param']}";
     }
     $message = '<ul><li>' . implode('</li><li>', $messages) . '</li></ul>';
-    // $message = print_r($_SESSION['showallthehooks_messages'], 1);
   }
   print <<<EOT
     <div class="info notice">{$message}</div>
