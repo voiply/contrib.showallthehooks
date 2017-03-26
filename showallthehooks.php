@@ -3,45 +3,6 @@
 require_once 'showallthehooks.hooks.php';
 
 /**
- * Debug a single value and its name, the best available way.
- *
- * Report which hooks got called.
- *
- * Show detail on a specific hook. Showing detail on all hooks will probably be
- * excessive - not hard to consume a lot of memory with dpm() and large objects.
- *
- * @TODO: WordPress debugging
- *   - https://wordpress.org/plugins/query-monitor/ ?
- *
- * @TODO: Joomla debugging
- *   - https://docs.joomla.org/How_to_debug_your_code ?
- *   - https://github.com/mathiasverraes/jdump
- */
-function _showallthehooks_debug($param, $name) {
-  if (function_exists('dpm')) {
-    // dpm() is a Drupal function provided by Devel module.
-    dpm($param, $name);
-  }
-  elseif (function_exists('drupal_set_message')) {
-    // drupal_set_message() is a core Drupal function.
-    drupal_set_message(t('%name => @param', array('%name' => $name, '@param' => print_r($param, 1))));
-  }
-  
-  else {
-    CRM_Core_Session::setStatus($param, $name, 'no-popup');
-  }
-}
-
-/**
- * Debug a series of function arguments and the called hook.
- */
-function _showallthehooks_debug_func_args($function, $args) {
-  foreach ($args as $name => $arg) {
-    _showallthehooks_debug($arg, $function . ': $' . $name);
-  }
-}
-
-/**
  * Extract a list of CiviCRM hooks.
  *
  * @TODO Include extension-provided hooks in results.
@@ -73,8 +34,8 @@ function _showallthehooks_generate_hooks() {
 <?php
 /**
  * @file
- * This file is generated automatically. It contains example implementations of 
- * all core CiviCRM hooks. You can edit it to enable additional debug on any 
+ * This file is generated automatically. It contains example implementations of
+ * all core CiviCRM hooks. You can edit it to enable additional debug on any
  * hook.
  *
  * To regenerate, see README.md or https://github.com/fuzionnz/contrib.showallthehooks
@@ -103,7 +64,7 @@ function _showallthehooks_generate_hook(ReflectionMethod $hook) {
   $method_name = $prefix . $hook->getName();
 
   return <<<EOT
-  
+
 {$hook->getDocComment()}
 function {$method_name}({$params}) {
   \$args = get_defined_vars();
@@ -115,3 +76,58 @@ function {$method_name}({$params}) {
 EOT;
 }
 
+/**
+ * Debug a single value and its name, the best available way.
+ *
+ * Report which hooks got called.
+ *
+ * Show detail on a specific hook. Showing detail on all hooks will probably be
+ * excessive - not hard to consume a lot of memory with dpm() and large objects.
+ *
+ * @TODO: WordPress debugging
+ *   - https://wordpress.org/plugins/query-monitor/ ?
+ *
+ * @TODO: Joomla debugging
+ *   - https://docs.joomla.org/How_to_debug_your_code ?
+ *   - https://github.com/mathiasverraes/jdump
+ */
+function _showallthehooks_debug($param, $name) {
+  if (function_exists('dpm')) {
+    dpm($param, $name);
+  }
+  elseif (function_exists('drupal_set_message')) {
+    drupal_set_message(t('%name => @param', array('%name' => $name, '@param' => print_r($param, 1))));
+  }
+  elseif (function_exists('add_action')) {
+    $_SESSION['showallthehooks_messages'][] = [ 'param' => $param, 'name' => $name ];
+    add_action('admin_notices', '_showallthehooks_wp_show_notices');
+  }
+  else {
+    // Core debug method.
+  }
+}
+
+/**
+ * Debug a series of function arguments and the called hook.
+ */
+function _showallthehooks_debug_func_args($function, $args) {
+  foreach ($args as $name => $arg) {
+    _showallthehooks_debug($arg, $function . ': $' . $name);
+  }
+}
+
+/**
+ * Debug function for WordPress core only.
+ */
+function _showallthehooks_wp_show_notices($args) {
+  if (!empty($_SESSION['showallthehooks_messages'])) {
+    foreach ($_SESSION['showallthehooks_messages'] as $message) {
+      $messages[] = "{$message['name']}: {$message['param']}";
+    }
+    $message = '<ul><li>' . implode('</li><li>', $messages) . '</li></ul>';
+    // $message = print_r($_SESSION['showallthehooks_messages'], 1);
+  }
+  print <<<EOT
+    <div class="info notice">{$message}</div>
+EOT;
+}
