@@ -69,7 +69,7 @@ function _showallthehooks_generate_hook(ReflectionMethod $hook) {
 function {$method_name}({$params}) {
   \$args = get_defined_vars();
   \$function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug(\$function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug(\$function, 'showallthehooks');
   // _showallthehooks_debug_func_args(\$function, \$args);
 }
 
@@ -93,17 +93,25 @@ EOT;
  */
 function _showallthehooks_debug($param, $name) {
   if (function_exists('dpm')) {
+    // dpm() is a Drupal function provided by Devel module.
     dpm($param, $name);
   }
   elseif (function_exists('drupal_set_message')) {
-    drupal_set_message(t('%name => @param', array('%name' => $name, '@param' => print_r($param, 1))));
+    // drupal_set_message() is a core Drupal function.
+    drupal_set_message(t('%name: @param', array('%name' => $name, '@param' => print_r($param, 1))));
   }
   elseif (function_exists('add_action')) {
+    // For WordPress, we stash them in $_SESSION and display when admin_notices called.
     $_SESSION['showallthehooks_messages'][] = [ 'param' => $param, 'name' => $name ];
     add_action('admin_notices', '_showallthehooks_wp_show_notices');
   }
+  elseif (class_exists('JFactory')) {
+    // Joomla message display.
+    JFactory::getApplication()->enqueueMessage($name . ': ' . $param);
+  }
   else {
-    // Core debug method.
+    // Core debug method. We probably won't hit this.
+    CRM_Core_Session::setStatus($param, $name, 'no-popup');
   }
 }
 
