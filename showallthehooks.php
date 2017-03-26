@@ -83,13 +83,6 @@ EOT;
  *
  * Show detail on a specific hook. Showing detail on all hooks will probably be
  * excessive - not hard to consume a lot of memory with dpm() and large objects.
- *
- * @TODO: WordPress debugging
- *   - https://wordpress.org/plugins/query-monitor/ ?
- *
- * @TODO: Joomla debugging
- *   - https://docs.joomla.org/How_to_debug_your_code ?
- *   - https://github.com/mathiasverraes/jdump
  */
 function _showallthehooks_debug($param, $name) {
   if (function_exists('dpm')) {
