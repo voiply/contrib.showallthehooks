@@ -19,13 +19,16 @@ require_once 'showallthehooks.hooks.php';
  */
 function _showallthehooks_debug($param, $name) {
   if (function_exists('dpm')) {
+    // dpm() is a Drupal function provided by Devel module.
     dpm($param, $name);
   }
   elseif (function_exists('drupal_set_message')) {
+    // drupal_set_message() is a core Drupal function.
     drupal_set_message(t('%name => @param', array('%name' => $name, '@param' => print_r($param, 1))));
   }
+  
   else {
-    // Core debug method.
+    CRM_Core_Session::setStatus($param, $name, 'no-popup');
   }
 }
 
