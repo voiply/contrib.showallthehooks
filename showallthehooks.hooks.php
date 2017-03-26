@@ -1,14 +1,14 @@
 <?php
 /**
  * @file
- * This file is generated automatically. It contains example implementations of 
- * all core CiviCRM hooks. You can edit it to enable additional debug on any 
- * hook. To regenerate the file, see docs.
+ * This file is generated automatically. It contains example implementations of
+ * all core CiviCRM hooks. You can edit it to enable additional debug on any
+ * hook.
  *
- * @TODO link to docs above :)
+ * To regenerate, see README.md or https://github.com/fuzionnz/contrib.showallthehooks
  */
 
-  
+
 /**
    * This hook is called when composing the ACL where clause to restrict
    * visibility of contacts to the logged in user
@@ -30,10 +30,10 @@
 function showallthehooks_civicrm_aclGroup($type, $contactID, $tableName, &$allGroups, &$currentGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when composing the ACL where clause to restrict
    * visibility of contacts to the logged in user
@@ -55,10 +55,10 @@ function showallthehooks_civicrm_aclGroup($type, $contactID, $tableName, &$allGr
 function showallthehooks_civicrm_aclWhereClause($type, &$tables, &$whereTables, &$contactID, &$where) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when API permissions are checked (cf. civicrm_api3_api_check_permission()
    * in api/v3/utils.php and _civicrm_api3_permissions() in CRM/Core/DAO/permissions.php).
@@ -75,10 +75,10 @@ function showallthehooks_civicrm_aclWhereClause($type, &$tables, &$whereTables, 
 function showallthehooks_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is invoked when building a CiviCRM name badge.
    *
@@ -97,10 +97,10 @@ function showallthehooks_civicrm_alterAPIPermissions($entity, $action, &$params,
 function showallthehooks_civicrm_alterBadge($labelName, &$label, &$format, &$participant) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before encoding data in barcode.
    *
@@ -116,10 +116,10 @@ function showallthehooks_civicrm_alterBadge($labelName, &$label, &$format, &$par
 function showallthehooks_civicrm_alterBarcode(&$data, $type, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when membership status is being calculated.
    *
@@ -141,10 +141,10 @@ function showallthehooks_civicrm_alterBarcode(&$data, $type, $context) {
 function showallthehooks_civicrm_alterCalculatedMembershipStatus(&$membershipStatus, $arguments, $membership) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hooks allows alteration of generated page content.
    *
@@ -162,10 +162,10 @@ function showallthehooks_civicrm_alterCalculatedMembershipStatus(&$membershipSta
 function showallthehooks_civicrm_alterContent(&$content, $context, $tplName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called to alter Deferred revenue item values just before they are
    * inserted in civicrm_financial_trxn table
@@ -183,10 +183,10 @@ function showallthehooks_civicrm_alterContent(&$content, $context, $tplName, &$o
 function showallthehooks_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $contributionDetails, $update, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Issue CRM-14276
    * Add a hook for altering the display name
@@ -203,10 +203,10 @@ function showallthehooks_civicrm_alterDeferredRevenueItems(&$deferredRevenues, $
 function showallthehooks_civicrm_alterDisplayName(&$displayName, $contactId, $dao) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows modification of the data calculated for merging locations.
    *
@@ -224,10 +224,10 @@ function showallthehooks_civicrm_alterDisplayName(&$displayName, $contactId, $da
 function showallthehooks_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $otherId, $migrationInfo) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows changes to the spec of which tables to log.
    *
@@ -238,10 +238,10 @@ function showallthehooks_civicrm_alterLocationMergeData(&$blocksDAO, $mainId, $o
 function showallthehooks_civicrm_alterLogTables(&$logTableSpec) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Deprecated: Misnamed version of alterMailer(). Remove post-4.7.x.
    * Modify or replace the Mailer object used for outgoing mail.
@@ -260,10 +260,10 @@ function showallthehooks_civicrm_alterLogTables(&$logTableSpec) {
 function showallthehooks_civicrm_alterMail(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after getting the content of the mail and before tokenizing it.
    *
@@ -275,10 +275,10 @@ function showallthehooks_civicrm_alterMail(&$mailer, $driver, $params) {
 function showallthehooks_civicrm_alterMailContent(&$content) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when an email is about to be sent by CiviCRM.
    *
@@ -293,10 +293,10 @@ function showallthehooks_civicrm_alterMailContent(&$content) {
 function showallthehooks_civicrm_alterMailParams(&$params, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Modify or replace the Mailer object used for outgoing mail.
    *
@@ -313,10 +313,10 @@ function showallthehooks_civicrm_alterMailParams(&$params, $context) {
 function showallthehooks_civicrm_alterMailer(&$mailer, $driver, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Hook definition for altering the generation of Mailing Labels.
    *
@@ -353,10 +353,10 @@ function showallthehooks_civicrm_alterMailer(&$mailer, $driver, $params) {
 function showallthehooks_civicrm_alterMailingLabelParams(&$args) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * (Experimental) This hook is called when build the menu table.
    *
@@ -368,10 +368,10 @@ function showallthehooks_civicrm_alterMailingLabelParams(&$args) {
 function showallthehooks_civicrm_alterMenu(&$items) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Hook definition for altering payment parameters before talking to a payment processor back end.
    *
@@ -397,10 +397,10 @@ function showallthehooks_civicrm_alterMenu(&$items) {
 function showallthehooks_civicrm_alterPaymentProcessorParams($paymentObj, &$rawParams, &$cookedParams) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param $varType
    * @param $var
@@ -411,10 +411,10 @@ function showallthehooks_civicrm_alterPaymentProcessorParams($paymentObj, &$rawP
 function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when Settings specifications are loaded.
    *
@@ -426,10 +426,10 @@ function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
 function showallthehooks_civicrm_alterSettingsFolders(&$settingsFolders) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when Settings have been loaded from the xml
    * It is an opportunity for hooks to alter the data
@@ -444,10 +444,10 @@ function showallthehooks_civicrm_alterSettingsFolders(&$settingsFolders) {
 function showallthehooks_civicrm_alterSettingsMetaData(&$settingsMetaData, $domainID, $profile) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hooks allows alteration of the tpl file used to generate content. It differs from the
    * altercontent hook as the content has already been rendered through the tpl at that point
@@ -466,10 +466,10 @@ function showallthehooks_civicrm_alterSettingsMetaData(&$settingsMetaData, $doma
 function showallthehooks_civicrm_alterTemplateFile($formName, &$form, $context, &$tplName) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * EXPERIMENTAL: This hook allows one to register additional Angular modules
    *
@@ -496,10 +496,10 @@ function showallthehooks_civicrm_alterTemplateFile($formName, &$form, $context, 
 function showallthehooks_civicrm_angularModules(&$angularModules) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before running an api call.
    *
@@ -513,10 +513,10 @@ function showallthehooks_civicrm_angularModules(&$angularModules) {
 function showallthehooks_civicrm_apiWrappers(&$wrappers, $apiRequest) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when the entries of the CSV Batch export are mapped.
    *
@@ -528,10 +528,10 @@ function showallthehooks_civicrm_apiWrappers(&$wrappers, $apiRequest) {
 function showallthehooks_civicrm_batchItems(&$results, &$items) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a query string of the CSV Batch export is generated.
    *
@@ -542,10 +542,10 @@ function showallthehooks_civicrm_batchItems(&$results, &$items) {
 function showallthehooks_civicrm_batchQuery(&$query) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when building the amount structure for a Contribution or Event Page.
    *
@@ -561,10 +561,10 @@ function showallthehooks_civicrm_batchQuery(&$query) {
 function showallthehooks_civicrm_buildAmount($pageType, &$form, &$amount) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is invoked when building a CiviCRM form. This hook should also
    * be used to set the default values of a form element
@@ -580,10 +580,10 @@ function showallthehooks_civicrm_buildAmount($pageType, &$form, &$amount) {
 function showallthehooks_civicrm_buildForm($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while preparing a profile form.
    *
@@ -593,10 +593,10 @@ function showallthehooks_civicrm_buildForm($formName, &$form) {
 function showallthehooks_civicrm_buildProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when building the state list for a particular country.
    *
@@ -609,10 +609,10 @@ function showallthehooks_civicrm_buildProfile($name) {
 function showallthehooks_civicrm_buildStateProvinceForCountry($countryID, &$states) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when uf groups are being built for a module.
    *
@@ -626,10 +626,10 @@ function showallthehooks_civicrm_buildStateProvinceForCountry($countryID, &$stat
 function showallthehooks_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook fires whenever a record in a case changes.
    *
@@ -639,10 +639,10 @@ function showallthehooks_civicrm_buildUFGroupsForModule($moduleName, &$ufGroups)
 function showallthehooks_civicrm_caseChange($analyzer) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when rendering the Manage Case screen.
    *
@@ -656,10 +656,10 @@ function showallthehooks_civicrm_caseChange($analyzer) {
 function showallthehooks_civicrm_caseSummary($caseID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when locating CiviCase types.
    *
@@ -670,10 +670,10 @@ function showallthehooks_civicrm_caseSummary($caseID) {
 function showallthehooks_civicrm_caseTypes(&$caseTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Check system status.
    *
@@ -684,10 +684,10 @@ function showallthehooks_civicrm_caseTypes(&$caseTypes) {
 function showallthehooks_civicrm_check(&$messages) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called soon after the CRM_Core_Config object has ben initialized.
    * You can use this hook to modify the config object and hence behavior of CiviCRM dynamically.
@@ -700,10 +700,10 @@ function showallthehooks_civicrm_check(&$messages) {
 function showallthehooks_civicrm_config(&$config) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Use this hook to populate the list of contacts returned by Contact Reference custom fields.
    * By default, Contact Reference fields will search on and return all CiviCRM contacts.
@@ -731,10 +731,10 @@ function showallthehooks_civicrm_config(&$config) {
 function showallthehooks_civicrm_contactListQuery(&$query, $name, $context, $id) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Modify the CiviCRM container - add new services, parameters, extensions, etc.
    *
@@ -759,10 +759,10 @@ function showallthehooks_civicrm_contactListQuery(&$query, $name, $context, $id)
 function showallthehooks_civicrm_container($container) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after a copy of an object has been made. The current objects are
    * Event, Contribution Page and UFGroup
@@ -777,10 +777,10 @@ function showallthehooks_civicrm_container($container) {
 function showallthehooks_civicrm_copy($objectName, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when core resources are being loaded
    *
@@ -792,10 +792,10 @@ function showallthehooks_civicrm_copy($objectName, &$object) {
 function showallthehooks_civicrm_coreResourceList(&$list, $region) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before running pending cron jobs.
    *
@@ -807,10 +807,10 @@ function showallthehooks_civicrm_coreResourceList(&$list, $region) {
 function showallthehooks_civicrm_cron($jobManager) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Generate a default CRUD URL for an entity.
    *
@@ -832,10 +832,10 @@ function showallthehooks_civicrm_cron($jobManager) {
 function showallthehooks_civicrm_crudLink($spec, $bao, &$link) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after a db write on a custom table.
    *
@@ -854,10 +854,10 @@ function showallthehooks_civicrm_crudLink($spec, $bao, &$link) {
 function showallthehooks_civicrm_custom($op, $groupID, $entityID, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when CiviCRM needs to edit/display a custom field with options
    *
@@ -881,10 +881,10 @@ function showallthehooks_civicrm_custom($op, $groupID, $entityID, &$params) {
 function showallthehooks_civicrm_customFieldOptions($customFieldID, &$options, $detailedFormat, $selectAttributes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when rendering the dashboard (q=civicrm/dashboard)
    *
@@ -900,10 +900,10 @@ function showallthehooks_civicrm_customFieldOptions($customFieldID, &$options, $
 function showallthehooks_civicrm_dashboard($contactID, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while viewing contact dashboard.
    *
@@ -917,10 +917,10 @@ function showallthehooks_civicrm_dashboard($contactID, &$contentPlacement) {
 function showallthehooks_civicrm_dashboard_defaults($availableDashlets, &$defaultDashlets) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a module-extension is disabled.
    * Each module will receive hook_civicrm_disable during its own disablement (but not during the
@@ -929,10 +929,10 @@ function showallthehooks_civicrm_dashboard_defaults($availableDashlets, &$defaul
 function showallthehooks_civicrm_disable() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows modification of the queries constructed from dupe rules.
    *
@@ -948,10 +948,10 @@ function showallthehooks_civicrm_disable() {
 function showallthehooks_civicrm_dupeQuery($obj, $type, &$query) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called AFTER EACH email has been processed by the script bin/EmailProcessor.php
    *
@@ -969,10 +969,10 @@ function showallthehooks_civicrm_dupeQuery($obj, $type, &$query) {
 function showallthehooks_civicrm_emailProcessor($type, &$params, $mail, &$result, $action) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when we are determining the contactID for a specific
    * email address
@@ -994,10 +994,10 @@ function showallthehooks_civicrm_emailProcessor($type, &$params, $mail, &$result
 function showallthehooks_civicrm_emailProcessorContact($email, $contactID, &$result) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a module-extension is re-enabled.
    * Each module will receive hook_civicrm_enable during its own re-enablement (but not during the
@@ -1006,10 +1006,10 @@ function showallthehooks_civicrm_emailProcessorContact($email, $contactID, &$res
 function showallthehooks_civicrm_enable() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Allows the list of filters on the EntityRef widget to be altered.
    *
@@ -1020,10 +1020,10 @@ function showallthehooks_civicrm_enable() {
 function showallthehooks_civicrm_entityRefFilters(&$filters) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called for declaring managed entities via API.
    *
@@ -1041,10 +1041,10 @@ function showallthehooks_civicrm_entityRefFilters(&$filters) {
 function showallthehooks_civicrm_entityTypes(&$entityTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param mixed $form
    * @param array $params
@@ -1054,10 +1054,10 @@ function showallthehooks_civicrm_entityTypes(&$entityTypes) {
 function showallthehooks_civicrm_eventDiscount(&$form, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before record is exported as CSV.
    *
@@ -1075,10 +1075,10 @@ function showallthehooks_civicrm_eventDiscount(&$form, &$params) {
 function showallthehooks_civicrm_export(&$exportTempTable, &$headerRows, &$sqlColumns, &$exportMode) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Hook for modifying field options
    *
@@ -1092,10 +1092,10 @@ function showallthehooks_civicrm_export(&$exportTempTable, &$headerRows, &$sqlCo
 function showallthehooks_civicrm_fieldOptions($entity, $field, &$options, $params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param array <CRM_Core_FileSearchInterface> $fileSearches
    * @return mixed
@@ -1103,10 +1103,10 @@ function showallthehooks_civicrm_fieldOptions($entity, $field, &$options, $param
 function showallthehooks_civicrm_fileSearches(&$fileSearches) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a geocoder's format method is called.
    *
@@ -1119,10 +1119,10 @@ function showallthehooks_civicrm_fileSearches(&$fileSearches) {
 function showallthehooks_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called for bypass a few civicrm urls from IDS check.
    *
@@ -1133,10 +1133,10 @@ function showallthehooks_civicrm_geocoderFormat($geoProvider, &$values, $xml) {
 function showallthehooks_civicrm_idsException(&$skip) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after a row has been processed and the
    * record (and associated records imported
@@ -1161,10 +1161,10 @@ function showallthehooks_civicrm_idsException(&$skip) {
 function showallthehooks_civicrm_import($object, $usage, &$objectRef, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a module-extension is installed.
    * Each module will receive hook_civicrm_install during its own installation (but not during the
@@ -1173,10 +1173,10 @@ function showallthehooks_civicrm_import($object, $usage, &$objectRef, &$params) 
 function showallthehooks_civicrm_install() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook retrieves links from other modules and injects it into.
    * the view contact tabs
@@ -1200,10 +1200,10 @@ function showallthehooks_civicrm_install() {
 function showallthehooks_civicrm_links($op, $objectName, &$objectId, &$links, &$mask, &$values) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when composing a mailing. You can include / exclude other groups as needed.
    *
@@ -1219,10 +1219,10 @@ function showallthehooks_civicrm_links($op, $objectName, &$objectId, &$links, &$
 function showallthehooks_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * (Experimental) Modify the list of template-types used for CiviMail composition.
    *
@@ -1236,10 +1236,10 @@ function showallthehooks_civicrm_mailingGroups(&$form, &$groups, &$mailings) {
 function showallthehooks_civicrm_mailingTemplateTypes(&$types) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called for declaring managed entities via API.
    *
@@ -1263,10 +1263,10 @@ function showallthehooks_civicrm_mailingTemplateTypes(&$types) {
 function showallthehooks_civicrm_managed(&$entities) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when composing the array of membershipTypes and their cost during a membership registration
    * (new or renewal).
@@ -1284,10 +1284,10 @@ function showallthehooks_civicrm_managed(&$entities) {
 function showallthehooks_civicrm_membershipTypeValues(&$form, &$membershipTypes) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows modification of the data used to perform merging of duplicates.
    *
@@ -1307,10 +1307,10 @@ function showallthehooks_civicrm_membershipTypeValues(&$form, &$membershipTypes)
 function showallthehooks_civicrm_merge($type, &$data, $mainId, $otherId, $tables) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows modification of the navigation menu.
    *
@@ -1322,10 +1322,10 @@ function showallthehooks_civicrm_merge($type, &$data, $mainId, $otherId, $tables
 function showallthehooks_civicrm_navigationMenu(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook provides a way to override the default privacy behavior for notes.
    *
@@ -1337,10 +1337,10 @@ function showallthehooks_civicrm_navigationMenu(&$params) {
 function showallthehooks_civicrm_notePrivacy(&$noteValues) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hooks allows to change option values.
    *
@@ -1356,10 +1356,10 @@ function showallthehooks_civicrm_notePrivacy(&$noteValues) {
 function showallthehooks_civicrm_optionValues(&$options, $name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before a CiviCRM Page is rendered. You can use this hook to insert smarty variables
    * in a  template
@@ -1372,10 +1372,10 @@ function showallthehooks_civicrm_optionValues(&$options, $name) {
 function showallthehooks_civicrm_pageRun(&$page) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when loading CMS permissions; use this hook to modify
    * the array of system permissions for CiviCRM.
@@ -1390,10 +1390,10 @@ function showallthehooks_civicrm_pageRun(&$page) {
 function showallthehooks_civicrm_permission(&$permissions) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when checking permissions; use this hook to dynamically
    * escalate user permissions in certain use cases (cf. CRM-19256).
@@ -1409,10 +1409,10 @@ function showallthehooks_civicrm_permission(&$permissions) {
 function showallthehooks_civicrm_permission_check($permission, &$granted) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after a db write on some core objects.
    *
@@ -1432,10 +1432,10 @@ function showallthehooks_civicrm_permission_check($permission, &$granted) {
 function showallthehooks_civicrm_post($op, $objectName, $objectId, &$objectRef) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when an email has been successfully sent by CiviCRM, but not on an error.
    *
@@ -1449,10 +1449,10 @@ function showallthehooks_civicrm_post($op, $objectName, $objectId, &$objectRef) 
 function showallthehooks_civicrm_postEmailSend(&$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a CiviMail mailing has completed
    *
@@ -1464,10 +1464,10 @@ function showallthehooks_civicrm_postEmailSend(&$params) {
 function showallthehooks_civicrm_postMailing($mailingId) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is invoked when a CiviCRM form is submitted. If the module has injected
    * any form elements, this hook should save the values in the database
@@ -1483,10 +1483,10 @@ function showallthehooks_civicrm_postMailing($mailingId) {
 function showallthehooks_civicrm_postProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param CRM_Core_DAO $dao
    *
@@ -1495,10 +1495,10 @@ function showallthehooks_civicrm_postProcess($formName, &$form) {
 function showallthehooks_civicrm_postSave(&$dao) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called after a case merge (or a case reassign)
    *
@@ -1513,10 +1513,10 @@ function showallthehooks_civicrm_postSave(&$dao) {
 function showallthehooks_civicrm_post_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before a db write on some core objects.
    * This hook does not allow the abort of the operation
@@ -1536,10 +1536,10 @@ function showallthehooks_civicrm_post_case_merge($mainContactId, $mainCaseId, $o
 function showallthehooks_civicrm_pre($op, $objectName, $id, &$params) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is invoked during the CiviCRM form preProcess phase.
    *
@@ -1554,10 +1554,10 @@ function showallthehooks_civicrm_pre($op, $objectName, $id, &$params) {
 function showallthehooks_civicrm_preProcess($formName, &$form) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before a case merge (or a case reassign)
    *
@@ -1572,10 +1572,10 @@ function showallthehooks_civicrm_preProcess($formName, &$form) {
 function showallthehooks_civicrm_pre_case_merge($mainContactId, $mainCaseId, $otherContactId, $otherCaseId, $changeClient) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called processing a valid profile form submission.
    *
@@ -1585,10 +1585,10 @@ function showallthehooks_civicrm_pre_case_merge($mainContactId, $mainCaseId, $ot
 function showallthehooks_civicrm_processProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while building the core search query,
    * so hook implementers can provide their own query objects which alters/extends core search.
@@ -1601,10 +1601,10 @@ function showallthehooks_civicrm_processProfile($name) {
 function showallthehooks_civicrm_queryObjects(&$queryObjects, $type) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called before storing recently viewed items.
    *
@@ -1616,10 +1616,10 @@ function showallthehooks_civicrm_queryObjects(&$queryObjects, $type) {
 function showallthehooks_civicrm_recent(&$recentArray) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * Determine how many other records refer to a given record.
    *
@@ -1637,10 +1637,10 @@ function showallthehooks_civicrm_recent(&$recentArray) {
 function showallthehooks_civicrm_referenceCounts($dao, &$refCounts) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called from CRM_Core_Selector_Controller through which all searches in civicrm go.
    * This enables us hook implementors to modify both the headers and the rows
@@ -1665,10 +1665,10 @@ function showallthehooks_civicrm_referenceCounts($dao, &$refCounts) {
 function showallthehooks_civicrm_searchColumns($objectName, &$headers, &$rows, &$selector) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while preparing a list of contacts (based on a profile)
    *
@@ -1678,10 +1678,10 @@ function showallthehooks_civicrm_searchColumns($objectName, &$headers, &$rows, &
 function showallthehooks_civicrm_searchProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    *
    * This hook is called to display the list of actions allowed after doing a search.
@@ -1704,10 +1704,10 @@ function showallthehooks_civicrm_searchProfile($name) {
 function showallthehooks_civicrm_searchTasks($objectType, &$tasks) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param string|CRM_Core_DAO $entity
    * @param array $clauses
@@ -1716,10 +1716,10 @@ function showallthehooks_civicrm_searchTasks($objectType, &$tasks) {
 function showallthehooks_civicrm_selectWhereClause($entity, &$clauses) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when rendering the contact summary.
    *
@@ -1736,10 +1736,10 @@ function showallthehooks_civicrm_selectWhereClause($entity, &$clauses) {
 function showallthehooks_civicrm_summary($contactID, &$content, &$contentPlacement) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook allows user to customize context menu Actions on contact summary page.
    *
@@ -1753,10 +1753,10 @@ function showallthehooks_civicrm_summary($contactID, &$content, &$contentPlaceme
 function showallthehooks_civicrm_summaryActions(&$actions, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when rendering the tabs for a contact (q=civicrm/contact/view)c
    *
@@ -1771,10 +1771,10 @@ function showallthehooks_civicrm_summaryActions(&$actions, $contactID) {
 function showallthehooks_civicrm_tabs(&$tabs, $contactID) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when rendering the tabs used for events and potentially
    * contribution pages, etc.
@@ -1791,10 +1791,10 @@ function showallthehooks_civicrm_tabs(&$tabs, $contactID) {
 function showallthehooks_civicrm_tabset($tabsetName, &$tabs, $context) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when sending an email / printing labels to get the values for all the
    * tokens returned by the 'tokens' hook
@@ -1815,10 +1815,10 @@ function showallthehooks_civicrm_tabset($tabsetName, &$tabs, $context) {
 function showallthehooks_civicrm_tokenValues(&$details, $contactIDs, $jobID, $tokens, $className) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when sending an email / printing labels
    *
@@ -1830,10 +1830,10 @@ function showallthehooks_civicrm_tokenValues(&$details, $contactIDs, $jobID, $to
 function showallthehooks_civicrm_tokens(&$tokens) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook collects the trigger definition from all components.
    *
@@ -1855,10 +1855,10 @@ function showallthehooks_civicrm_tokens(&$tokens) {
 function showallthehooks_civicrm_triggerInfo(&$info, $tableName) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * @param CRM_Core_Exception Exception $exception
    * @param mixed $request
@@ -1867,10 +1867,10 @@ function showallthehooks_civicrm_triggerInfo(&$info, $tableName) {
 function showallthehooks_civicrm_unhandledException($exception, $request) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a module-extension is uninstalled.
    * Each module will receive hook_civicrm_uninstall during its own uninstallation (but not during the
@@ -1879,10 +1879,10 @@ function showallthehooks_civicrm_unhandledException($exception, $request) {
 function showallthehooks_civicrm_uninstall() {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when a contact unsubscribes from a mailing.  It allows modules
    * to override what the contacts are removed from.
@@ -1904,10 +1904,10 @@ function showallthehooks_civicrm_uninstall() {
 function showallthehooks_civicrm_unsubscribeGroups($op, $mailingId, $contactId, &$groups, &$baseGroups) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called to drive database upgrades for extension-modules.
    *
@@ -1924,10 +1924,10 @@ function showallthehooks_civicrm_unsubscribeGroups($op, $mailingId, $contactId, 
 function showallthehooks_civicrm_upgrade($op, $queue) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is invoked during all CiviCRM form validation. An array of errors
    * detected is returned. Else we assume validation succeeded.
@@ -1946,10 +1946,10 @@ function showallthehooks_civicrm_upgrade($op, $queue) {
 function showallthehooks_civicrm_validateForm($formName, &$fields, &$files, &$form, &$errors) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while validating a profile form submission.
    *
@@ -1959,10 +1959,10 @@ function showallthehooks_civicrm_validateForm($formName, &$fields, &$files, &$fo
 function showallthehooks_civicrm_validateProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called while preparing a read-only profile screen
    *
@@ -1972,10 +1972,10 @@ function showallthehooks_civicrm_validateProfile($name) {
 function showallthehooks_civicrm_viewProfile($name) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-  
+
 /**
    * This hook is called when building the menu table.
    *
@@ -1988,7 +1988,7 @@ function showallthehooks_civicrm_viewProfile($name) {
 function showallthehooks_civicrm_xmlMenu(&$files) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
-  _showallthehooks_debug($function, 'showallthehooks: CiviCRM called hook');
+  _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
 
