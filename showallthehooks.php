@@ -120,12 +120,12 @@ function _showallthehooks_debug($param, $name) {
  * Debug a series of function arguments and the called hook.
  */
 function _showallthehooks_debug_func_args($function, $args) {
-  foreach ($args as $name => $arg) {
-    if (class_exists('jdbg')){
-      jdbg::p($param);
-    }
-    else {
-      _showallthehooks_debug($arg, $function . ': $' . $name);
+  if (class_exists('jdbg')){
+    jdbg::p($args);
+  }
+  else {
+    foreach ($args as $name => $arg) {
+        _showallthehooks_debug($arg, $function . ': $' . $name);
     }
   }
 }
