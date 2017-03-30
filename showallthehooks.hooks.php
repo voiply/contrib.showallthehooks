@@ -412,8 +412,6 @@ function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
   _showallthehooks_debug($function, 'showallthehooks');
-  if (class_exists('jdbg')){jdbg::p($args);}
-  //_showallthehooks_debug_func_args($function, $object);
   _showallthehooks_debug_func_args($function, $args);
 }
 
