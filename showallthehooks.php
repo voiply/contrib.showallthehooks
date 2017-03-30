@@ -105,16 +105,10 @@ function _showallthehooks_debug($param, $name) {
     add_action('admin_notices', '_showallthehooks_wp_show_notices');
   }
   elseif (class_exists('JFactory')) {
-    // If jdbg is installed, display debug info in a much nicer way.
-    if (class_exists('jdbg')){
-      jdbg::p($param);
-    }
-    else {
-      // Format for output.
-      $output = print_r($param, 1);
-      // Joomla message display.
-      JFactory::getApplication()->enqueueMessage($name . ': ' . $output);
-    }
+    // Format for output.
+    $output = print_r($param, 1);
+    // Joomla message display.
+    JFactory::getApplication()->enqueueMessage($name . ': ' . $output);
   }
   else {
     // Core debug method. We probably won't hit this.
@@ -127,7 +121,12 @@ function _showallthehooks_debug($param, $name) {
  */
 function _showallthehooks_debug_func_args($function, $args) {
   foreach ($args as $name => $arg) {
-    _showallthehooks_debug($arg, $function . ': $' . $name);
+    if (class_exists('jdbg')){
+      jdbg::p($param);
+    }
+    else {
+      _showallthehooks_debug($arg, $function . ': $' . $name);
+    }
   }
 }
 
