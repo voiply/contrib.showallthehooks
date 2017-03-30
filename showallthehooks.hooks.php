@@ -412,7 +412,7 @@ function showallthehooks_civicrm_alterReportVar($varType, &$var, &$object) {
   $args = get_defined_vars();
   $function = preg_replace('/showallthehooks/', 'hook', __FUNCTION__);
   _showallthehooks_debug($function, 'showallthehooks');
-  // _showallthehooks_debug_func_args($function, $args);
+  _showallthehooks_debug_func_args($function, $args);
 }
 
 /**
@@ -1991,4 +1991,3 @@ function showallthehooks_civicrm_xmlMenu(&$files) {
   _showallthehooks_debug($function, 'showallthehooks');
   // _showallthehooks_debug_func_args($function, $args);
 }
-
